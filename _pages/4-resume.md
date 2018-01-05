@@ -29,8 +29,6 @@ tcontents:
       id: "#personal-data"
     - name: Biography
       id: "#biography"
-    - name: Objetive
-      id: "#objetive"      
     - name: Education
       id: "#education"
     - name: Skills
@@ -48,22 +46,10 @@ script: [resume.js]
 permalink: /resume/
 ---
 
-#  Typing
-### A theme for Jekyll
-
-<br>
-
 ## Personal Data
 
-**Nationality**: Brazilian   
-**Date of Birth**: 2017/04/05   
-**Marital Status**: Single   
-**Home Address**: Lorem, Lorem Ipsum, 789 / Dolor  
-**Country**: Brazil   
-**Province**: Lorem Ipsum/LI   
-**Telephone**: +55 011 1234 5678   
-**Email**: your-email@example.com   
-**Website**: [my-web-site.domain](http://williamcanin.com)   
+**Nationality**: Chinese   
+**Email**: mengyuethu@gmail.com   
 
 
 ## Biography
@@ -73,9 +59,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid, al
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde earum itaque saepe voluptatum distinctio soluta provident repudiandae mollitia similique repellat eum incidunt quo, tenetur quasi voluptatem sed animi repellendus.
 
-## Objetive
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eum, quae delectus, et sit laborum voluptas neque, nemo itaque quia a. Quas harum earum, quasi minus aspernatur laboriosam aperiam nam.
 
 ## Education
 
@@ -132,5 +115,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ab odit sed
 ## Languages
 
 * **English** - Intermediary
-* **Latim** - I do not know Latin, it was only for testing.
-* **Portuguese** - Native
+* **Chinese** - Native

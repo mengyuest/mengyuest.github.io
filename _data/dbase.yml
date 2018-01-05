@@ -16,7 +16,7 @@ website:
   title: Typing
   description: Typing - A Theme for Jekyll
   launch: 2016
-  avatar: typing.svg
+  avatar: mylogo.png #typing.svg
   metatag:
     google-site-verification:
     type: "WebSite"
@@ -32,11 +32,11 @@ website:
       id:  # tracking id, e.g. "UA-000000-01"
       events: true # Use: true | false . Events Google Analytics
   author:
-    image: typing.svg
+    image: mylogo.png #typing.svg
   strings:
     sidebar:
       title: |
-        Hey, <br> I'm Typing.
+        Yue Meng
       links:
         home: Hello
     footer:
@@ -86,25 +86,25 @@ userdata:
     username:
   # You can add at most 4 social. If you do not want 4, you can remove the block containing: title, id, icon, url.
   socials:
-    title: Follow Me!
+    title: Here I am!
     ga_event: true # Google Analytics Event (Hit). Usage: true | false
     links:
       - title: GitHub
         id: github
         icon: fa-github
-        url: https://github.com
+        url: https://github.com/mengyuest/mengyuest.github.io
+
+      - title: Facebook
+        id: facebook
+        icon: fa-facebook
+        url: https://facebook.com/yue.meng.75
 
       - title: Twitter
         id: twitter
         icon: fa-twitter
-        url: https://twitter.com
-
-      - title: Google Plus
-        id: gplus
-        icon: fa-google-plus
-        url: https://plus.google.com
+        url: https://twitter.com/YueMeng_ManUtd
 
       - title: LinkedIn
         id: linkedin
         icon: fa-linkedin
-        url: https://linkedin.com
+        url: https://linkedin.com/in/yuemeng95
