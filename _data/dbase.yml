@@ -13,8 +13,8 @@ website:
     subtitle: |
       <p> It will not have forecast of return. Meanwhile, follow me on the social networks below. </p>
 
-  title: Typing
-  description: Typing - A Theme for Jekyll
+  title: My website
+  description: Born for legend
   launch: 2016
   avatar: mylogo.png #typing.svg
   metatag:
@@ -38,9 +38,9 @@ website:
       title: |
         Yue Meng
       links:
-        home: Hello
+        home: Home
     footer:
-      message: Simplicity is fashionable.
+      message: Born for legend. Be the best.
     comments:
       title: Leave a comment on this post
       disable: The comment for this post is disabled.
@@ -60,7 +60,7 @@ website:
         title: Author
         name: Typing Theme
         bio: |
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora non aut eos voluptas debitis unde impedit aliquid ipsa.
+          This is for sth in dbase.yml i don't understand related to bio
     search:
       input:
         placeholder: ['Search in','article(s)']
@@ -86,7 +86,7 @@ userdata:
     username:
   # You can add at most 4 social. If you do not want 4, you can remove the block containing: title, id, icon, url.
   socials:
-    title: Here I am!
+    title:
     ga_event: true # Google Analytics Event (Hit). Usage: true | false
     links:
       - title: GitHub
