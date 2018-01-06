@@ -20,10 +20,13 @@ permalink: /misc/
 I have many hobbies
 
 ## I love soccer
-### School team
-### Community team
-### Coach
+{% imager soccer-1.png|center %}
+{% imager soccer-3.jpg|center %}
+{% imager soccer-4.png|center %}
+{% imager soccer-2.jpg|center %}
 
 ## I am good at running
-### Running record
-### Jogging life style
+{%imager run-2.png|center %}
+{%imager run-4.jpg|center %}
+{%imager run-1.jpg|center %}
+{%imager run-3.jpg|center %}

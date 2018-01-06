@@ -27,8 +27,8 @@ tcontents:
   links:
     - name: Education
       id: "#education"
-    - name: Work Experience
-      id: "#workexp"
+    - name: Work-Experience
+      id: "#work-experience"
     - name: Skills
       id: "#skills"
     - name: Languages
@@ -61,7 +61,7 @@ Bachelor of Engineering, Automation (Aug. 2013 - Jul. 2017)
 	- Study Scholarship of Tsinghua University, 2014, 2015
 	- Sports Scholarship of Tsinghua University, 2014, 2015
 
-## Work Experience
+## **Work-Experience**
 ### **System Development Intern**, TuSimple Inc, Beijing, China (Jul. 2017 - Sep. 2017)
 * Implemented ROS node to capture real-time videos from cameras on minibus and integrated faster-rcnn algorithm in the node for object detection.
 * Optimized the image process procedures and increased the handling speed by 40%.
@@ -79,11 +79,11 @@ Bachelor of Engineering, Automation (Aug. 2013 - Jul. 2017)
 * Developed a simulation software for micro-scope transportation at non-signal intersection.
 * Applied a novel pruning algorithm to accelerate the speed of traditional cooperative driving approach.
 
-## Skills
+## **Skills**
 * **Programming:** C/C++, Python, Matlab, C#, etc
 * **Tools:** ROS, Docker, Git, LATEX, GDB, Vim
 * **OS:** Linux, Windows
 
-## Languages
+## **Languages**
 * **English** - Intermediary
 * **Chinese** - Native
