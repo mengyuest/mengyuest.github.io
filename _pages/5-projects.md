@@ -23,14 +23,13 @@ script: [projects.js]
 permalink: /projects/
 ---
 
-If you wanted to know about my favorite chores, this is the correct page. You find my designs of my own, or participation.
+Follows are some of the interesting projects I have made. Enjoy~
 
-##  Major collaborations
+##  Major Projects
 
-**[Typing Theme](https://github.com/williamcanin/typing-theme)**: Creating themes for Jekyll   
+**[CV-Paper Butler](https://github.com/mengyuest/iccv2017_cvpr2017_butler)**: Download iccv2017/cvpr2017 easily and fast.
 
-
-|[Typing Jekyll Template](https://github.com/williamcanin/typing-jekyll-template){:target="_blank"} <i class="fa fa-external-link"></i>|
+|[iccv2017_cvpr2017_butler](https://github.com/mengyuest/iccv2017_cvpr2017_butler){:target="_blank"} <i class="fa fa-external-link"></i>|
 --------------------------|----------------------------
 | **Status**: <label style="color:green;">Active</label> |
-| **Description**: Typing, is a template for Jekyll built especially for those who want to have a blog and pages quickly and lightly. |
+| **Description**: Download papers and other supplementals from ICCV2017/CVPR2017 in fast and wisely-organized way.|

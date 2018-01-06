@@ -19,22 +19,18 @@ menu: true
 btnprint: true
 
 excerpt: |
-    This is my resume. On this page you can print using the browser shortcut (Ctrl + P) or using the 'Print' Button as well.
+    For printing, use shortcut (Ctrl + P) or 'Print' Button
 
 tcontents:
   enable: true
   title: Table Of Contents
   links:
-    - name: Personal Data
-      id: "#personal-data"
-    - name: Biography
-      id: "#biography"
     - name: Education
       id: "#education"
+    - name: Work Experience
+      id: "#workexp"
     - name: Skills
       id: "#skills"
-    - name: Projects
-      id: "#projects"
     - name: Languages
       id: "#languages"   
 
@@ -45,74 +41,49 @@ script: [resume.js]
 
 permalink: /resume/
 ---
+## **Education**
+### **University of California San Diego**, San Diego, CA, USA
+Master of Science, Electrical and Computer Engineering (Sep. 2017 - Jul. 2019)
+* Cumulative GPA: **4.0/4.0**
+* Selected courses:
+	- CSE 252A Computer Vision (**A+**)
+	- ECE 271A Statistical Learning I (**A+**)
+	- ECE 276A Sensing & Estimation in Robotics (**A**)
+* Ongoing courses:
+	- CSE 291 Recent Advances in Computer Vision
+	- ECE 269 Linear Algebra and Application
+	- ECE 271B Statistical Learning II
 
-## Personal Data
+### **Tsinghua University**, Beijing, China
+Bachelor of Engineering, Automation (Aug. 2013 - Jul. 2017)
+* Cumulative GPA: **87/100**
+* Prizes:
+	- Study Scholarship of Tsinghua University, 2014, 2015
+	- Sports Scholarship of Tsinghua University, 2014, 2015
 
-**Nationality**: Chinese   
-**Email**: mengyuethu@gmail.com   
+## Work Experience
+### **System Development Intern**, TuSimple Inc, Beijing, China (Jul. 2017 - Sep. 2017)
+* Implemented ROS node to capture real-time videos from cameras on minibus and integrated faster-rcnn algorithm in the node for object detection.
+* Optimized the image process procedures and increased the handling speed by 40%.
+* Created dockerfiles enabling all the components to run isolated from the machine environment.
 
+### **Research Intern**, Purdue University, West Lafayette, IN, USA (Aug. 2016 - Sep. 2016)
+* Reformative numerical approaches to solve incompressible Navier-Stokes equation.
+* Increased the order of time accuracy from one to two. Significantly reduced the computation cost by merging three steps into two steps.
 
-## Biography
+### **Research Intern**, Singapore-MIT Alliance for Research and Technology (Jul. 2016 - Aug. 2016)
+* The first attempt to use database to do on-line calibration for DynaMIT2.0.
+* Implemented a database-based simulation infrastructure.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid, alias voluptatibus vel eligendi eveniet. Quas rem, repellendus deleniti nostrum minima delectus maxime fugiat, voluptates modi, laudantium, natus eligendi <sequi class="Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At non quibusdam repellat commodi veniam ab voluptate odio recusandae earum, magnam dolore architecto dolorem. Sint dolor deserunt, molestiae soluta, consequatur non!</sequi>
-
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde earum itaque saepe voluptatum distinctio soluta provident repudiandae mollitia similique repellat eum incidunt quo, tenetur quasi voluptatem sed animi repellendus.
-
-
-## Education
-
-### Ipsum Dolor
-
-*Lorem, Lorem — Lorem Ipsum ‘14*
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quod voluptatum earum asperiores esse labore impedit eos cum obcaecati unde sequi ad beatae magni aut iure, dolorum doloribus nulla, officia!
-
-### Ipsum Dolor
-
-*Lorem, Lorem — Lorem Ipsum ‘14*
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quod voluptatum earum asperiores esse labore impedit eos cum obcaecati unde sequi ad beatae magni aut iure, dolorum doloribus nulla, officia!
+### **Research Assistant**, Tsinghua University, Beijing, China (Jun. 2016 - Jan. 2017)
+* Developed a simulation software for micro-scope transportation at non-signal intersection.
+* Applied a novel pruning algorithm to accelerate the speed of traditional cooperative driving approach.
 
 ## Skills
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil magni incidunt commodi quod libero atque architecto, vero est unde, qui inventore assumenda quaerat perferendis ab reprehenderit quis excepturi dolores, labore.
-
-**Web Development:**   
-
-{% label HTML|16px %}
-{% label Bootstrap|16px %}
-{% label CSS3|16px %}
-{% label JQuery|16px %}
-{% label LESS|16px %}
-{% label Angular|16px %}
-{% label SCSS|16px %}
-
-
-**Back-End:**
-
-{% label Ruby|16px %}
-{% label Java|16px %}
-
-
-
-### Lorem Ipsum
-
-*Lorem ipsum dolor sit amet*
-
-*August 2014 – December 2015*
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut architecto quis sit in qui, omnis repudiandae nam excepturi veritatis enim expedita voluptates repellat. Ipsam quae tempore nihil, quos voluptates commodi.
-
-## Projects
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ab odit sed maxime possimus ducimus doloribus minima dolore quaerat, consequatur repellat eius saepe, nisi architecto nemo animi, et quidem. At!
-
-* [Lorem](http://williamcanin.github.io/typing-theme){:target="_blank"} - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-* [Lorem](http://williamcanin.github.io/typing-theme){:target="_blank"} - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
+* **Programming:** C/C++, Python, Matlab, C#, etc
+* **Tools:** ROS, Docker, Git, LATEX, GDB, Vim
+* **OS:** Linux, Windows
 
 ## Languages
-
 * **English** - Intermediary
 * **Chinese** - Native
