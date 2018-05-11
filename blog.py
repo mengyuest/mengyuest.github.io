@@ -21,12 +21,18 @@ app.config['FREEZER_DESTINATION_IGNORE']=['.git*','blog.py','content/posts/*.md'
 app.config.from_object(__name__)
 
 @app.route("/")
+def posts_1():
+    posts=[p for p in flatpages if p.path.startswith(POST_DIR)]
+    posts.sort(key=lambda item:item['date'], reverse=False)
+    return render_template('posts.html',posts=posts)
+
+@app.route("/posts/")
 def posts():
     posts=[p for p in flatpages if p.path.startswith(POST_DIR)]
     posts.sort(key=lambda item:item['date'], reverse=False)
     return render_template('posts.html',posts=posts)
 
-@app.route('/<name>/')
+@app.route('/posts/<name>/')
 def post(name):
     path='{}/{}'.format(POST_DIR,name)
     post=flatpages.get_or_404(path)
