@@ -1,1 +1,0 @@
-jQuery(document).ready(function(e){e(".post > .row.content a").addClass("ga-event"),e(".hello > .row.content a").addClass("ga-event"),e("a.ga-event").attr("onclick","ga('send','event','LinkTo',this.href,'/mengyuest.github.io');")});
