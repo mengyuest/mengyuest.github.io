@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>This is a default title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-    <!-- Bootstrap -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  </head>
-  <body>
-    
-
-    
+{% block content %}
 <div class="container-fluid">
 
 <div class="row">
 <div class="col-md-2">
-<img src="/static/images/hit.jpg" class="img-responsive" alt="Responsive image">
+<img src="{{ url_for('static', filename = 'images/hit.jpg') }}" class="img-responsive" alt="Responsive image">
 
 <ul class="nav nav-pills nav-stacked">
-  <li role="presentation"  class="active" ><a href="/home">Home</a></li>
-  <li role="presentation"  ><a href="/resume">Resume</a></li>
-  <li role="presentation"  ><a href="/projects">Projects</a></li>
-  <li role="presentation"  ><a href="/misc">Misc</a></li>
+  <li role="presentation" {% if url_for(request.endpoint) in ["/","/home"]%} class="active"{%endif%} ><a href="/home">Home</a></li>
+  <li role="presentation" {% if url_for(request.endpoint) == "/resume" %} class="active"{%endif%} ><a href="/resume">Resume</a></li>
+  <li role="presentation" {% if url_for(request.endpoint) == "/projects" %} class="active"{%endif%} ><a href="/projects">Projects</a></li>
+  <li role="presentation" {% if url_for(request.endpoint) == "/misc" %} class="active"{%endif%} ><a href="/misc">Misc</a></li>
   
   <li role="presentation" >
   <div class="col-md-3" > 
@@ -55,27 +43,7 @@
 </div>
 
 <div class="col-md-10">
-<h1>Homepage</h1>
-<blockquote>
-<p>this is the homepage</p>
-</blockquote>
-<h2>Hi</h2>
-<h3>Hello</h3>
-<h2>Hi</h2>
-<h3>Hello</h3>
-<h2>Hi</h2>
-<h3>Hello</h3>
-<h2>Hi</h2>
-<h3>Hello</h3>
-<h2>Hi</h2>
-<h3>Hello</h3>
-<h2>Hi</h2>
-<h3>Hello</h3>
-<ul>
-<li>Helloworld</li>
-<li><code>Helloworld</code></li>
-<li><strong>Helloworld</strong></li>
-</ul>
+{{ post.html|safe }}
 
 
 
@@ -137,10 +105,6 @@
 
 </div>
 
+{% endblock %}
 
 
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
-</html>

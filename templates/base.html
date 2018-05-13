@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %} <!-- base.html模板继承自bootstrap/base.html -->
+
+
+{# We also set a default title, usually because we might forget to set one.
+In our sample app, we will most likely just opt not to change it #}
+{% block title %}This is a default title{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock styles %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+<!--title、navbar、content都是bootstrap/base.html中定义的块。navbar是显示导航栏，其中的代码比较多，作用是添加Flasky和Home两个链接-->
+<!--以后的html页面直接继承base.html就可以了-->
