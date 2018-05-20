@@ -8,6 +8,16 @@ In our sample app, we will most likely just opt not to change it #}
 {% block styles %}
 {{super()}}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+.navbar-fixed-left{
+position: fixed;
+border-radius:0;
+height:100%;
+width:16%;
+}
+</style>
+
 {% endblock styles %}
 
 {% block navbar %}

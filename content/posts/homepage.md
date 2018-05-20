@@ -1,20 +1,11 @@
 title: HOMEPAGE
 date: 1995-02-20
 
-# Homepage
-> this is the homepage
-## Hi
-### Hello
-## Hi
-### Hello
-## Hi
-### Hello
-## Hi
-### Hello
-## Hi
-### Hello
-## Hi
-### Hello
-- Helloworld
-* `Helloworld`
-* **Helloworld**
+# Misha's Homepage
+> Hi, I am Yue Meng.
+
+* I am currently a master student in UCSD. 
+* I come from China and have graduated from Tsinghua. 
+* I love math and keen on programming
+* I enjoy soccer and good at running. 
+* Nice to meet you, hope we can becom friends :-)
