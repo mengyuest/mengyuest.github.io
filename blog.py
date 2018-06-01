@@ -16,7 +16,7 @@ bootstrap=Bootstrap(app)
 flatpages=FlatPages(app)
 freezer = Freezer(app)
 app.config['FREEZER_DESTINATION']=''
-app.config['FREEZER_DESTINATION_IGNORE']=['.git*','blog.py','content/posts/*.md','templates/*.html','templates/*.css','sources',"static/images/*"]
+app.config['FREEZER_DESTINATION_IGNORE']=['.git*','blog.py','content/posts/*.md','templates/*.html','templates/*.css','sources',"static/images/*","static/pdfs/*"]
 
 app.config.from_object(__name__)
 
