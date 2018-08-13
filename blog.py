@@ -16,7 +16,7 @@ POST_DIR='posts'
 app=Flask(__name__)
 bootstrap=Bootstrap(app)
 flatpages=FlatPages(app)
-FlatPagesPandoc("markdown",app,["--mathjax"])
+#FlatPagesPandoc("markdown",app,["--mathjax"])
 freezer = Freezer(app)
 app.config['FREEZER_DESTINATION']=''
 app.config['FREEZER_DESTINATION_IGNORE']=['.git*','blog.py','content/*.md','content/posts/*.md','templates/*.html','templates/*.css','sources',"static/images/*","static/pdfs/*"]
