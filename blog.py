@@ -1,6 +1,7 @@
 #blog.py
 import sys
 from flask import Flask, render_template
+from flask_flatpages_pandoc import FlatPagesPandoc
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 from flask_bootstrap import Bootstrap
@@ -15,6 +16,7 @@ POST_DIR='posts'
 app=Flask(__name__)
 bootstrap=Bootstrap(app)
 flatpages=FlatPages(app)
+FlatPagesPandoc("markdown",app,["--mathjax"])
 freezer = Freezer(app)
 app.config['FREEZER_DESTINATION']=''
 app.config['FREEZER_DESTINATION_IGNORE']=['.git*','blog.py','content/*.md','content/posts/*.md','templates/*.html','templates/*.css','sources',"static/images/*","static/pdfs/*"]
@@ -36,8 +38,8 @@ def index():
 @app.route("/resume/")
 def resume():
     path='{}'.format("resume")
-    post=flatpages.get_or_404(path)
-    return render_template("index.html", post=post) #render_template('posts.html',posts=posts)
+    #post=flatpages.get_or_404(path)
+    return render_template("index.html", post=None) #render_template('posts.html',posts=posts)
 
 @app.route("/projects/")
 def projects():
