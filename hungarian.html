@@ -41,6 +41,139 @@
 <h1>Hungarian method</h1>
 </div>
 <p>Referenced from <a href="https://www.cse.ust.hk/~golin/COMP572/Notes/Matching.pdf">https:<i></i>www.cse.ust.hk<i>&nbsp;golin</i>COMP572<i>Notes</i>Matching.pdf</a></p>
+<dl>
+<dt>bipartite</dt>
+<dd><p>A graph <img class="eq" src="eqs/4454021985318947492-130.png" alt=" G=(V,E)" style="vertical-align: -5px" /> is <b>bipartite</b> if <img class="eq" src="eqs/6593608946456132640-130.png" alt="exists X cap Y = emptyset,, s.t., V=Xcup Y, and ,Esubseteq Xtimes Y" style="vertical-align: -4px" /></p></dd>
+</dl>
+<dl>
+<dt>matching</dt>
+<dd><p>A <b>matching</b> <img class="eq" src="eqs/1065820479581875126-130.png" alt="Msubseteq E" style="vertical-align: -3px" /> is <img class="eq" src="eqs/8960763864539049948-130.png" alt="forall v in V" style="vertical-align: -1px" />, atmost one edge in <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> corresponding with <img class="eq" src="eqs/15104045431-130.png" alt="v" style="vertical-align: -1px" /></p></dd>
+</dl>
+<dl>
+<dt>maximum matching</dt>
+<dd><p><b>Maximum matching</b> is a problem as <img class="eq" src="eqs/1847244325052181903-130.png" alt="mathop{argmax}limits_{Msubseteq E}|M|" style="vertical-align: -18px" /></p></dd>
+</dl>
+<dl>
+<dt>maximum weighted matching</dt>
+<dd><p>Define <b>weight</b> <img class="eq" src="eqs/6293322270975975683-130.png" alt="w(i,j)geq 0,, forall i,j in V" style="vertical-align: -5px" />. <b>Maximum weighted matching</b> is to solve <img class="eq" src="eqs/5541995328413314780-130.png" alt="mathop{argmax}limits_{Msubseteq E}sumlimits_{ein M} w(e)" style="vertical-align: -18px" /> (can assume <img class="eq" src="eqs/9088027334-130.png" alt="G" style="vertical-align: -1px" /> complete graph, by zero-padding weight)</p></dd>
+</dl>
+<dl>
+<dt>matched and free</dt>
+<dd><p>Vertex <img class="eq" src="eqs/15104045431-130.png" alt="v" style="vertical-align: -1px" /> is <b>matched</b> if <img class="eq" src="eqs/6054399588584297751-130.png" alt="exists ein M" style="vertical-align: -1px" />, <img class="eq" src="eqs/15104045431-130.png" alt="v" style="vertical-align: -1px" /> is a point of <img class="eq" src="eqs/12928038884-130.png" alt="e" style="vertical-align: -1px" />. Otherwise call <img class="eq" src="eqs/15104045431-130.png" alt="v" style="vertical-align: -1px" /> as <b>free</b></p></dd>
+</dl>
+<dl>
+<dt>alternating path</dt>
+<dd><p><b>Alternating path</b> is edges head-by-tail linked and alternative between <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> and <img class="eq" src="eqs/3910854067977984984-130.png" alt="E-M" style="vertical-align: -0px" /></p></dd>
+</dl>
+<dl>
+<dt>augmented</dt>
+<dd><p>An alternating path is <b>augmented</b> if both endpoints are free</p></dd>
+</dl>
+<dl>
+<dt>alternating tree</dt>
+<dd><p>An <b>alternating tree</b> is a tree rooted at some free points, where every path from it is an alternating path</p></dd>
+</dl>
+<dl>
+<dt>perfect matching</dt>
+<dd><p>An <b>perfect matching</b> is an <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> including every vertex in <img class="eq" src="eqs/11008033111-130.png" alt="V" style="vertical-align: -1px" /></p></dd>
+</dl>
+<dl>
+<dt>labelling</dt>
+<dd><p>A <b>labelling</b> is a function <img class="eq" src="eqs/2604471465404001673-130.png" alt="l:Vto R" style="vertical-align: -1px" /></p></dd>
+</dl>
+<dl>
+<dt>feasible labelling</dt>
+<dd><p>A <b>feasible labelling</b> satisfies <img class="eq" src="eqs/3868369595475731165-130.png" alt="l(x)+l(y)geq w(x,y),,forall xin X,, yin Y" style="vertical-align: -5px" /></p></dd>
+</dl>
+<dl>
+<dt>equality graph(w.r.t. <img class="eq" src="eqs/13824041581-130.png" alt="l" style="vertical-align: -1px" />)</dt>
+<dd><p>An <b>equality graph</b> is <img class="eq" src="eqs/4506670283549166045-130.png" alt="G_l=(V,E_l)" style="vertical-align: -5px" /> where <img class="eq" src="eqs/6656590736791552251-130.png" alt="E_l={(x,y):l(x)+l(y)=w(x,y)}" style="vertical-align: -5px" /></p></dd>
+</dl>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Theorem:</b> If <img class="eq" src="eqs/13824041581-130.png" alt="l" style="vertical-align: -1px" /> feasible and <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> perfect in <img class="eq" src="eqs/3910854067931984865-130.png" alt="E_l" style="vertical-align: -4px" />, then <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> is a max-weight matching</p>
+<p><b>Proof:</b> For any matching, always can find a perfect matching as its upper bound. For any perfect matching <img class="eq" src="eqs/9856059213088898-130.png" alt="M'" style="vertical-align: -0px" />, we have </p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/405934404292725255-130.png" alt=" w(M')=sumlimits_{ein M'}w(e)leqsumlimits_{ein M'}(l(e_x)+l(e_y))=sumlimits_{vin V}l(v) = w(M) " />
+<br /></div><p>Therefore <img class="eq" src="eqs/3668982459997340077-130.png" alt="w(M)" style="vertical-align: -5px" /> is an upper bound for all perfect matchings <img class="eq" src="eqs/8589083888624747367-130.png" alt="w(M')" style="vertical-align: -5px" />, hence <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> is a max-weight matching</p>
+</div></div>
+<p>Then we have an simple algorithm</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Algorithm:</b></p>
+<ol>
+<li><p>initial <img class="eq" src="eqs/13824041581-130.png" alt="l" style="vertical-align: -1px" /> and <img class="eq" src="eqs/1612820595213359801-130.png" alt=",Msubseteq E_l" style="vertical-align: -4px" /> by setting <img class="eq" src="eqs/3121172806954316347-130.png" alt="l(y)=0,,forall yin Y" style="vertical-align: -5px" /> and <img class="eq" src="eqs/246379978578165016-130.png" alt="l(x)=maxlimits_{yin Y}w(x,y),,forall xin X" style="vertical-align: -15px" /></p>
+</li>
+<li><p>while <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> not perfect: </p>
+<ol>
+<li><p>find augmenting path for <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> to increase <img class="eq" src="eqs/7943069039015039636-130.png" alt="|M|" style="vertical-align: -5px" /> </p>
+</li>
+<li><p>if no augmenting path, improve <img class="eq" src="eqs/13824041581-130.png" alt="l" style="vertical-align: -1px" /> to <img class="eq" src="eqs/9175491061376475037-130.png" alt="l',s.t. E_lsubset E_{l'}" style="vertical-align: -4px" /></p>
+</li>
+</ol>
+
+</li>
+</ol>
+</div></div>
+<dl>
+<dt>neighbour(w.r.t <img class="eq" src="eqs/13824041581-130.png" alt="l" style="vertical-align: -1px" />)</dt>
+<dd><p>An <b>neighbour</b> of vertex <img class="eq" src="eqs/400793263856092786-130.png" alt="uin V" style="vertical-align: -1px" /> is <img class="eq" src="eqs/2709586215460868198-130.png" alt="N_l(u)={v:(u,v)in E_l}" style="vertical-align: -5px" />. An <b>neighbour</b> of set <img class="eq" src="eqs/8529506910607245889-130.png" alt="Ssubseteq V" style="vertical-align: -3px" /> is <img class="eq" src="eqs/1025152340508056567-130.png" alt="N_l(S)=cup_{uin S}N_l(u)" style="vertical-align: -5px" /></p></dd>
+</dl>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Lemma</b>: Let <img class="eq" src="eqs/8529506910607245903-130.png" alt="Ssubseteq X" style="vertical-align: -3px" /> and <img class="eq" src="eqs/291022588436166443-130.png" alt="T=N_l(s)neq Y" style="vertical-align: -5px" />. Set <img class="eq" src="eqs/7235125314946691176-130.png" alt="alpha_l = minlimits_{xin S, ynotin T}{l(x)+l(y)-w(x,y)}" style="vertical-align: -17px" /> (like in ECE272 Convex Optimization, doesn't it?). And define the <b>update rule</b> as:</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/7143140797019582228-130.png" alt=" l'(v)=left{ begin{array}{ll} l(v)-alpha_l &amp; if ,Vin S  l(v)+alpha_l &amp; if ,Vin T  l(v) &amp; otherwise end{array}right. " />
+<br /></div><p>Then <img class="eq" src="eqs/13824083052124769-130.png" alt="l'" style="vertical-align: -1px" /> is a feasible labelling and </p>
+<ol>
+<li><p>If <img class="eq" src="eqs/908766793460207599-130.png" alt="(x,y)in E_l,,xin S,,yin T" style="vertical-align: -5px" />, then <img class="eq" src="eqs/7524171659144253381-130.png" alt="(x,y)in E_{l'}" style="vertical-align: -5px" /></p>
+</li>
+<li><p>If <img class="eq" src="eqs/6088833514083794165-130.png" alt="(x,y)in E_l,,xnotin S,,ynotin T" style="vertical-align: -5px" />, then <img class="eq" src="eqs/7524171659144253381-130.png" alt="(x,y)in E_{l'}" style="vertical-align: -5px" /></p>
+</li>
+<li><p>There is some edge <img class="eq" src="eqs/9015633610729893416-130.png" alt="(x,y) in E_{l'}" style="vertical-align: -5px" /> for <img class="eq" src="eqs/1893576562691205383-130.png" alt="xin S,,ynotin T" style="vertical-align: -5px" /></p>
+</li>
+</ol>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Hungarian Method:</b></p>
+<ol>
+<li><p>Generate initial labelling <img class="eq" src="eqs/13824041581-130.png" alt="l" style="vertical-align: -1px" /> and matching <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /></p>
+</li>
+<li><p>Considering <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" />:</p>
+<ol>
+<li><p>If <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> perfect, stop (according to theorem, we find the solution)</p>
+</li>
+<li><p>Otherwise, pick free vertex <img class="eq" src="eqs/400793263856092800-130.png" alt="uin X" style="vertical-align: -1px" /> and set <img class="eq" src="eqs/3611070571402955774-130.png" alt="S={u},,T=emptyset" style="vertical-align: -5px" /></p>
+</li></ol>
+</li>
+<li><p>If <img class="eq" src="eqs/5656869923850816370-130.png" alt="N_l(S)=T" style="vertical-align: -5px" />, update labels(to make N_l(S)&gt;T) by update rule</p>
+</li>
+<li><p>IF <img class="eq" src="eqs/3231425415222837357-130.png" alt="N_l(S)neq T" style="vertical-align: -5px" /> (actually <img class="eq" src="eqs/7927675717980846648-130.png" alt="Tsubset N_l(S)" style="vertical-align: -5px" />), pick <img class="eq" src="eqs/2048758875121571411-130.png" alt="yin N_l(s)-T" style="vertical-align: -5px" /></p>
+<ol>
+<li><p>If <img class="eq" src="eqs/15488046584-130.png" alt="y" style="vertical-align: -4px" /> free, <img class="eq" src="eqs/2621286447082506644-130.png" alt="u-y" style="vertical-align: -4px" /> is augmenting path. Augment <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> and goto 2</p>
+</li>
+<li><p>If <img class="eq" src="eqs/15488046584-130.png" alt="y" style="vertical-align: -4px" /> matched, say to <img class="eq" src="eqs/15616046971-130.png" alt="z" style="vertical-align: -1px" />, then extend alternating tree: <img class="eq" src="eqs/3249177103851424576-130.png" alt="S'=Scup{z},,T'=Tcup{y}" style="vertical-align: -5px" /> and goto 3</p>
+</li>
+</ol>
+
+</li>
+</ol>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Comment</b></p>
+<p>S和T相当于找可增广交替链的过程，和朴素的最大二分匹配差不多（只不过这里我们要找更强的完全匹配），只不过多了一步更新规则</p>
+<p>从定理我们知道只需要在等式图里找一个完全匹配，这样的思路使得我们在匹配边时不用考虑权重（等式图<img class="eq" src="eqs/3910854067931984865-130.png" alt="E_l" style="vertical-align: -4px" />本身就是权重的自洽，这里面的边我们可以任意使用），而当找不到匹配时才需要通过更新规则引入新的合法边纳入等式图</p>
+<p>一条可增广交替链必须是两端都是自由的，中间是匹配边和非匹配边交替</p>
+<p>首先找到一个自由点作为S端的引入，T是已观察到被匹配的点集： 如果<img class="eq" src="eqs/5656869923850816370-130.png" alt="N_l(S)=T" style="vertical-align: -5px" />，说明S没有可探的路径了，需要步骤3更新规则来纳入新的合法边（增大<img class="eq" src="eqs/6119415961703992337-130.png" alt="N_l(S)" style="vertical-align: -5px" />），找到新的可探路径（我们要找完全匹配，当然不能就在这里停下来）；如果<img class="eq" src="eqs/5656869923851816237-130.png" alt="N_l(S)&gt;T" style="vertical-align: -5px" />，那么<img class="eq" src="eqs/2844505271753531469-130.png" alt="yin N_l(S)-T" style="vertical-align: -5px" />就是一条可探路径的末端，把y加入到T中：然后如果y是自由点（相当于加一条非匹配边），那就相当于找到了一条可增广交替链的两端，进行增广；如果y是匹配点，找到和它匹配的另一端z然后加到S中（相当于加一条非匹配边再加一条匹配边），然后继续在合法的等式图里试探。</p>
+<p>我猜，顶点的标号和边的权重是对偶的；每一次都是在对偶问题的可行解（标号和权重的约束关系）找使得原问题约束成立（完全匹配）的解，对偶问题里的每一个解（所有端点的标签和）都应该是比原问题里的解（完全匹配边权和）要大的（标号权重规则），更深层的就理解不能了。 </p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Complexity</b>
+每次增广使得匹配点数至少加一，一共<img class="eq" src="eqs/11008033111-130.png" alt="V" style="vertical-align: -1px" />个点，所以最外层套个<img class="eq" src="eqs/7943069038992039577-130.png" alt="|V|" style="vertical-align: -5px" />。每次增广的过程要遍历所有的边一次，所以内层是<img class="eq" src="eqs/8048370966287825401-130.png" alt="|V|^2" style="vertical-align: -5px" />，所以总共是<img class="eq" src="eqs/1176813385145348227-130.png" alt="O(|V|^3)" style="vertical-align: -5px" /></p>
+</div></div>
 <div id="footer">
 <div id="footer-text">
 <!-- Default Statcounter code for My homepage
@@ -61,7 +194,7 @@ target="_blank"><img class="statcounter"
 src="//c.statcounter.com/11797803/0/54080103/0/" alt="Web
 Analytics Made Easy - StatCounter"></a></div></noscript>
 <!-- End of Statcounter Code -->
-Page generated 2018-08-18 03:05:11 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2018-08-18 11:00:42 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

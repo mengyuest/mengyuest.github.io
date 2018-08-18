@@ -1,2 +1,22 @@
 # jemdoc: menu{MENU}{soccer.html}
 = Soccer
+
+~~~
+{}{img_left}{data/soccer-1.png}{soccer-1}{500px}{}
+Champion at automation tournament, 2017 
+~~~
+
+~~~
+{}{img_left}{data/soccer-2.jpg}{soccer-2}{500px}{}
+Automation soccer team, 2013
+~~~
+
+~~~
+{}{img_left}{data/soccer-3.jpg}{soccer-3}{500px}{}
+Classmates in the soccer team, 2015
+~~~
+
+~~~
+{}{img_left}{data/soccer-4.png}{soccer-4}{500px}{}
+Third place at college futsal tournament, 2015
+~~~

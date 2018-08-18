@@ -3,4 +3,94 @@
 
 Referenced from [https://www.cse.ust.hk/~golin/COMP572/Notes/Matching.pdf https://www.cse.ust.hk/~golin/COMP572/Notes/Matching.pdf]
 
+: {bipartite} A graph $ G=(V,E)$ is *bipartite* if $\exists X \cap Y = \emptyset,\, s.t.\, V=X\cup Y\, and \,E\subseteq X\times Y$
 
+: {matching} A *matching* $M\subseteq E$ is $\forall v \in V$, atmost one edge in $M$ corresponding with $v$
+
+: {maximum matching} *Maximum matching* is a problem as $\mathop{argmax}\limits_{M\subseteq E}|M|$
+
+: {maximum weighted matching} Define *weight* $w(i,j)\geq 0,\, \forall i,j \in V$. *Maximum weighted matching* is to solve $\mathop{argmax}\limits_{M\subseteq E}\sum\limits_{e\in M} w(e)$ (can assume $G$ complete graph, by zero-padding weight)
+
+: {matched and free} Vertex $v$ is *matched* if $\exists e\in M$, $v$ is a point of $e$. Otherwise call $v$ as *free*
+
+: {alternating path} *Alternating path* is edges head-by-tail linked and alternative between $M$ and $E-M$
+
+: {augmented} An alternating path is *augmented* if both endpoints are free
+
+: {alternating tree} An *alternating tree* is a tree rooted at some free points, where every path from it is an alternating path
+
+: {perfect matching} An *perfect matching* is an $M$ including every vertex in $V$
+
+: {labelling} A *labelling* is a function $l:V\to R$
+
+: {feasible labelling} A *feasible labelling* satisfies $l(x)+l(y)\geq w(x,y),\,\forall x\in X,\, y\in Y$
+
+: {equality graph(w.r.t. $l$)} An *equality graph* is $G_l=(V,E_l)$ where $E_l=\{(x,y):l(x)+l(y)=w(x,y)\}$
+
+~~~
+*Theorem:* If $l$ feasible and $M$ perfect in $E_l$, then $M$ is a max-weight matching
+
+*Proof:* For any matching, always can find a perfect matching as its upper bound. For any perfect matching $M'$, we have 
+\(
+w(M')=\sum\limits_{e\in M'}w(e)\leq\sum\limits_{e\in M'}(l(e_x)+l(e_y))=\sum\limits_{v\in V}l(v) = w(M)
+\)
+Therefore $w(M)$ is an upper bound for all perfect matchings $w(M')$, hence $M$ is a max-weight matching
+~~~
+
+Then we have an simple algorithm
+~~~
+*Algorithm:*
+. initial $l$ and $\,M\subseteq E_l$ by setting $l(y)=0,\,\forall y\in Y$ and $l(x)=\max\limits_{y\in Y}w(x,y),\,\forall x\in X$
+. while $M$ not perfect: 
+  .. find augmenting path for $M$ to increase $|M|$ 
+  .. if no augmenting path, improve $l$ to $l'\,s.t. E_l\subset E_{l'}$
+~~~
+
+: {neighbour(w.r.t $l$)} An *neighbour* of vertex $u\in V$ is $N_l(u)=\{v:(u,v)\in E_l\}$. An *neighbour* of set $S\subseteq V$ is $N_l(S)=\cup_{u\in S}N_l(u)$
+
+~~~ 
+*Lemma*: Let $S\subseteq X$ and $T=N_l(s)\neq Y$. Set $\alpha_l = \min\limits_{x\in S, y\notin T}\{l(x)+l(y)-w(x,y)\}$ (like in ECE272 Convex Optimization, doesn't it?). And define the *update rule* as:
+\(
+l'(v)=\left\{
+\begin{array}{ll}
+l(v)-\alpha_l & if \,V\in S \\
+l(v)+\alpha_l & if \,V\in T \\
+l(v) & otherwise
+\end{array}\right.
+\)
+Then $l'$ is a feasible labelling and 
+. If $(x,y)\in E_l,\,x\in S,\,y\in T$, then $(x,y)\in E_{l'}$
+. If $(x,y)\in E_l,\,x\notin S,\,y\notin T$, then $(x,y)\in E_{l'}$
+. There is some edge $(x,y) \in E_{l'}$ for $x\in S,\,y\notin T$
+~~~
+
+~~~
+*Hungarian Method:*
+. Generate initial labelling $l$ and matching $M$
+. Considering $M$:
+  .. If $M$ perfect, stop (according to theorem, we find the solution)
+  .. Otherwise, pick free vertex $u\in X$ and set $S=\{u\},\,T=\emptyset$
+. If $N_l(S)=T$, update labels(to make N_l(S)>T) by update rule
+. IF $N_l(S)\neq T$ (actually $T\subset N_l(S)$), pick $y\in N_l(s)-T$
+  .. If $y$ free, $u-y$ is augmenting path. Augment $M$ and goto 2
+  .. If $y$ matched, say to $z$, then extend alternating tree: $S'=S\cup\{z\},\,T'=T\cup\{y\}$ and goto 3
+~~~
+
+~~~
+*Comment*
+
+S和T相当于找可增广交替链的过程，和朴素的最大二分匹配差不多（只不过这里我们要找更强的完全匹配），只不过多了一步更新规则
+
+从定理我们知道只需要在等式图里找一个完全匹配，这样的思路使得我们在匹配边时不用考虑权重（等式图$E_l$本身就是权重的自洽，这里面的边我们可以任意使用），而当找不到匹配时才需要通过更新规则引入新的合法边纳入等式图
+
+一条可增广交替链必须是两端都是自由的，中间是匹配边和非匹配边交替
+
+首先找到一个自由点作为S端的引入，T是已观察到被匹配的点集： 如果$N_l(S)=T$，说明S没有可探的路径了，需要步骤3更新规则来纳入新的合法边（增大$N_l(S)$），找到新的可探路径（我们要找完全匹配，当然不能就在这里停下来）；如果$N_l(S)>T$，那么$y\in N_l(S)-T$就是一条可探路径的末端，把y加入到T中：然后如果y是自由点（相当于加一条非匹配边），那就相当于找到了一条可增广交替链的两端，进行增广；如果y是匹配点，找到和它匹配的另一端z然后加到S中（相当于加一条非匹配边再加一条匹配边），然后继续在合法的等式图里试探。
+
+我猜，顶点的标号和边的权重是对偶的；每一次都是在对偶问题的可行解（标号和权重的约束关系）找使得原问题约束成立（完全匹配）的解，对偶问题里的每一个解（所有端点的标签和）都应该是比原问题里的解（完全匹配边权和）要大的（标号权重规则），更深层的就理解不能了。 
+~~~
+
+~~~
+*Complexity*
+每次增广使得匹配点数至少加一，一共$V$个点，所以最外层套个$|V|$。每次增广的过程要遍历所有的边一次，所以内层是$|V|^2$，所以总共是$O(|V|^3)$
+~~~

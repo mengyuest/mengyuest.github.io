@@ -1,2 +1,96 @@
 # jemdoc: menu{MENU}{projects.html}
 = Projects
+
+This is the page for some of my projects during first year of master at UCSD:
+- Cheetah: Foreground Segmentation
+- CamOILi: Camera Inertial LiDAR Particle Filter SLAM
+- Mario RL: Playing Super Mario in policy gradient method
+- Yolokey: Object detection and keypoint detection in ROS
+- RSS2018 Spotlight: Dense Spatial Segmentation from Sparse Semantic Information
+
+== Cheetah: Foreground Segmentation
+
+Given training set of foreground/background, how to tell where is the cheetah.
+
+~~~
+{}{raw}
+<div id="banner">
+<figure>
+<img src="data/cheetah.bmp" width="400">
+<figcaption>Fig.0 - This is cheetah.</figcaption>
+</figure>
+</div>
+<div id="banner">
+  <div class="" style="display: inline-block">
+  <figure>
+  <img src="data/HW1-Histogram.png" width="200">
+  <figcaption>Fig.1 - Histogram.</figcaption>
+  </figure>
+  </div>
+  <div class="" style="display: inline-block">
+  <figure>
+  <img src="data/HW2-Gaussian.png" width="200">
+  <figcaption>Fig.2 - Gaussian.</figcaption>
+  </figure>
+  </div>
+<div>
+<div id="banner">
+  <div class="" style="display: inline-block">
+  <figure>
+  <img src="data/HW3,4-Bayesian.bmp" width="200">
+  <figcaption>Fig.3 - Bayesian.</figcaption>
+  </figure>
+  </div>
+
+  <div class="" style="display: inline-block">
+  <figure>
+  <img src="data/HW5-EMmethod.bmp" width="200">
+  <figcaption>Fig.4 - EM method.</figcaption>
+  </figure>
+  </div>
+</div>
+~~~
+
+== CamOILi: Camera Inertial LiDAR Particle Filter SLAM
+
+If we have RGBD camera, IMU and LiDAR, how can our robot realize the world?
+
+~~~
+{}{img_left}{data/276_rec3.png}{slam-1}{600px}{}
+Raw image, occupancy grid map and 2d reconstruction
+~~~
+
+== Mario RL: Playing Super Mario in policy gradient method
+
+~~~
+{}{img_left}{data/mario-demo.png}{rl-1}{400px}{}
+Screenshot of live game
+~~~
+
+~~~
+{}{img_left}{data/epi.png}{rl-2}{400px}{}
+Reward received among episodes of games
+~~~
+
+== Yolokey: Object detection and keypoint detection in ROS
+
+An tensorflow implementation of [https://github.com/geopavlakos/object3d stacked hourglass network] to detect category-specific keypoint and thanks to the [https://github.com/leggedrobotics/darknet_ros yolo-ros package].
+
+~~~
+{}{img_left}{data/tum-desk.png}{yolokey-1}{400px}{}
+~~~
+
+== RSS2018 workshop spotlight
+*Qiaojun Feng, Yue Meng, Nikolay Atanasov, Dense Spatial Segmentation from Sparse Semantic Information \[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]*
+
+/Abstract---This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation./
+
+~~~
+{}{img_left}{data/rss2018-1.png}{rss-1}{400px}{}
+Semantic perception in front end
+~~~
+
+~~~
+{}{img_left}{data/rss2018-2.png}{rss-2}{400px}{}
+Reconstruction
+~~~
