@@ -1,0 +1,4 @@
+# jemdoc: menu{MENU}{helloworld.html}
+= HELLOWORLD
+
+This is just a helloworld.
