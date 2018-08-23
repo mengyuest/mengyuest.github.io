@@ -1,0 +1,25 @@
+# jemdoc: menu{MENU}{collecting.html}
+# jemdoc: analytics{UA-124162585-1}
+# jemdoc: addpackage{amsmath}
+= Collecting
+
+~~~
+This page renders some useful and interesting links (keep updating...)
+~~~
+
+== $\text{\LaTeX}$
+- [http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf LaTeX for Beginners]
+
+== CMake
+- [https://github.com/onqtam/awesome-cmake Awesome CMake]
+- [https://cgold.readthedocs.io/en/latest/ CGold: The Hitchhiker's Guide to the CMake]
+
+== Robotics
+- [http://paopaorobot.org/ 泡泡机器人]
+- [https://arxiv.org/pdf/1606.05830.pdf Past, Present and Future of SLAM]
+- [https://people.eecs.berkeley.edu/~chaene/cvpr17tut/SLAM.pdf Visual SLAM and VO]
+- [http://ais.informatik.uni-freiburg.de/teaching/ws11/robotics2/pdfs/rob2-13-frontends.pdf SLAM Front-Ends]
+- [http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Triggs00.pdf Bundle Adjustment: A Modern Synthesis]
+
+== Watch soccer live
+- [https://www.reddit.com/r/soccerstreams/ reddit/soccerstreams]
