@@ -30,6 +30,7 @@ I love math and keen on robotics. I enjoy soccer and running.
 - [http://www.tsinghuaveterans.com/ Tsinghua Veteran Soccer Team]
 - [https://sites.google.com/view/sdred/ San Diego Red Army Soccer Team]
 
+== Discussion
 ~~~
 {}{raw}
 <div id="disqus_thread"></div>
@@ -40,7 +41,7 @@ I love math and keen on robotics. I enjoy soccer and running.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
-this.page.url = 'https://mengyuest.github.io';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = 'https://mengyuest.github.io/index.html';  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = 'index'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
