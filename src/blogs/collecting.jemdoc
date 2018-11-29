@@ -3,10 +3,14 @@
 # jemdoc: addpackage{amsmath}
 = Collecting
 
+== If procastinating
+- [https://www.bilibili.com/video/av3584431/ 央视纪录片《高考》]
+- [https://aideadlin.es/?sub=RO,CV,ML AI Conference Deadlines]
 
-== PhD
+== Ph.D.
 - [https://zhuanlan.zhihu.com/p/29636455 北美博士必读清单]
 - [https://www.zhihu.com/question/28920341 大牛写的非技术类作品]
+- [https://www.cs.unc.edu/~azuma/hitch4.html CS Graduate Survival Guide]
 
 == Robotics
 - [https://github.com/kanster/awesome-slam Awesome SLAM]
@@ -15,6 +19,7 @@
 - [https://people.eecs.berkeley.edu/~chaene/cvpr17tut/SLAM.pdf Visual SLAM and VO]
 - [http://ais.informatik.uni-freiburg.de/teaching/ws11/robotics2/pdfs/rob2-13-frontends.pdf SLAM Front-Ends]
 - [http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Triggs00.pdf Bundle Adjustment: A Modern Synthesis]
+- [http://cs.brown.edu/research/ai/pomdp/tutorial/ POMDP]
 
 == $\text{\LaTeX}$
 - [http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf LaTeX for Beginners]
@@ -26,4 +31,5 @@
 == Blogs
 - [http://www.pgbovine.net/writings.htm Philip Guo]
 - [https://www.kennethreitz.org/ Kenneth Reitz]
+
 
