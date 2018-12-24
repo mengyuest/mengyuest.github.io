@@ -1,16 +1,14 @@
-Homepage
-    home                [index.html]
-    resume              [data/cv.pdf]
-    projects            [projects.html]
+INTRO
+    Home                [index.html]
+    Resume              [data/cv.pdf]
+    Projects            [projects.html]
 
-Blogs
+BLOGS
     Collecting          [collecting.html]
     Hungarian method    [hungarian.html]
     IROS2018-SLAM       [iros2018-slam-papers]
     
-Misc
+MISC
     我们自35班          [https://www.bilibili.com/video/av35787189]
-    soccer              [soccer.html]
-    running             [running.html]
-    
-Social
+    Soccer              [soccer.html]
+    Running             [running.html]

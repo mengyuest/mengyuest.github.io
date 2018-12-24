@@ -13,15 +13,29 @@ body {
 	margin: 0;
 }
 
+/*sidebar*/
+#sidebar {
+    float:right;
+    position:fixed;
+    height: 100vh;
+    top:0; bottom:0; left:0;
+    width:100px;
+    background:#ffffff;
+}
+
+
+
 #layout-menu {
 	background: #182B49; /*#f6f6f6;*/
 	border: 1px solid #ffffff; /*#dddddd;*/
+    position: fixed; /*to make the menu fixed*/
 	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
+	padding-left: 4px;/*8px;*/
+	padding-right: 4px;/*8px;*/
 	font-size: 1.0em;
     color: #ffffff;
 	width: auto;
+    height: 100vh;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -34,7 +48,7 @@ body {
 
 #layout-content {
 	padding-top: 0.0em;
-	padding-left: 1.0em;
+	padding-left: 11.0em; /*to make sure not overlapped*/
 	padding-right: 1.0em;
     border: none;
     background: white;
@@ -43,9 +57,11 @@ body {
 }
 
 #layout-menu a {
-	line-height: 1.5em;
-	margin-left: 0.5em;
+	line-height: 1.8em;
+	margin-left: 0.25em;
+    margin-right: 0.25em;
 }
+
 
 tt {
     background: #ffffdd;
@@ -65,6 +81,7 @@ a:hover {
 	border-bottom: 1px gray dotted;
 }
 
+
 #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #C69214; /*#022b6d;*/
 	border-bottom: 1px #C69214 /*gray*/ solid;
@@ -78,6 +95,7 @@ a:hover {
     border-bottom: 1px #FFCD00 solid;
 	text-decoration: none;
 }
+
 
 div.menu-category {
 	border-bottom: 1px solid /*gray*/ #FFFFFF;

@@ -1,20 +1,18 @@
 # jemdoc: menu{MENU}{index.html}
 # jemdoc: analytics{UA-124162585-1}
-= Yue Meng
-
+= Meng, Yue (孟岳)
 
 ~~~
 {}{img_left}{data/hit.jpg}{Harbin}{200}{200}
-
-Meng, Yue (孟岳)\n
+Research Assistant @ [https://existentialrobotics.org/ Existential Robotics Laboratory]\n
 [http://www.ece.ucsd.edu/ Electrical Computer Engineering] \n
 [http://jacobsschool.ucsd.edu/ Jacob School of Engineering] \n
-[https://ucsd.edu/ University of California, San Diego]\n
-(The photo was taken at HIT, Harbin, China, 2014)
+[https://ucsd.edu/ University of California, San Diego]\n\n
+(The photo was taken at [http://en.hit.edu.cn/ HIT], Harbin, China, 2014)
 ~~~
 
-Currently I am pursuing master degree in Electrical Computer Engineering at UCSD. \n 
-Before that, I got my bachelor degree from Department of Automation at Tsinghua University, China. \n
+I am pursuing an M.S. degree in [http://www.ece.ucsd.edu/ Electrical Computer Engineering] at [https://ucsd.edu/ University of California, San Diego]. \n
+Before that, I received a B.S. degree in the [https://www.tsinghua.edu.cn/publish/au/index.html Department of Automation] from [http://www.tsinghua.edu.cn/publish/thu2018en/index.html Tsinghua University]. \n
 I love math and keen on robotics. I enjoy soccer and running.
 
 == Reseach
@@ -27,32 +25,7 @@ I love math and keen on robotics. I enjoy soccer and running.
 
 == Links
 - [https://www.bilibili.com/video/av35787189 2013级自35班毕业纪念视频【光阴的故事】]
-- [https://existentialrobotics.org/ Existential Robotics Laboratory]
 - [http://www.tsinghuaveterans.com/ Tsinghua Veteran Soccer Team]
 - [https://sites.google.com/view/sdred/ San Diego Red Army Soccer Team]
 
-== Discussion
-~~~
-{}{raw}
-<div id="disqus_thread"></div>
-<script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = 'https://mengyuest.github.io/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = 'index'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://mengyuest-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-~~~
