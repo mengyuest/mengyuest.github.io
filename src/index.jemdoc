@@ -3,12 +3,11 @@
 = Meng, Yue (孟岳)
 
 ~~~
-{}{img_left}{data/hit.jpg}{Harbin}{200}{200}
+{}{img_left}{data/2.jpg}{Harbin}{160}{160}
 Research Assistant @ [https://existentialrobotics.org/ Existential Robotics Laboratory]\n
 [http://www.ece.ucsd.edu/ Electrical Computer Engineering] \n
 [http://jacobsschool.ucsd.edu/ Jacob School of Engineering] \n
 [https://ucsd.edu/ University of California, San Diego]\n\n
-(The photo was taken at [http://en.hit.edu.cn/ HIT], Harbin, China, 2014)
 ~~~
 
 I am pursuing an M.S. degree in [http://www.ece.ucsd.edu/ Electrical Computer Engineering] at [https://ucsd.edu/ University of California, San Diego]. \n
@@ -16,9 +15,9 @@ Before that, I received a B.S. degree in the [https://www.tsinghua.edu.cn/publis
 I love math and keen on robotics. I enjoy [https://mengyuest.github.io/soccer.html soccer] and [https://mengyuest.github.io/running.html running].
 
 == Reseach
-- Robotics (perception)
-- Computer vision
-- Machine learning
+- Robot Perception
+- Computer Vision
+- Machine Learning
 
 == Contact
 - Email: yum107@ucsd.edu
