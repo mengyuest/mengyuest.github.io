@@ -2,96 +2,65 @@
 # jemdoc: analytics{UA-124162585-1}
 = Projects
 
-This is the page for some of my projects during first year of master at UCSD:
-- Cheetah: Foreground Segmentation
-- CamOILi: Camera Inertial LiDAR Particle Filter SLAM
-- Mario RL: Playing Super Mario in policy gradient method
-- Yolokey: Object detection and keypoint detection in ROS
-- RSS2018 Spotlight: Dense Spatial Segmentation from Sparse Semantic Information
-
-== Cheetah: Foreground Segmentation
-
-Given training set of foreground/background, how to tell where is the cheetah.
-
 ~~~
-{}{raw}
-<div id="banner">
-<figure>
-<img src="data/cheetah.bmp" width="400">
-<figcaption>Fig.0 - This is cheetah.</figcaption>
-</figure>
-</div>
-<div id="banner">
-  <div class="" style="display: inline-block">
-  <figure>
-  <img src="data/HW1-Histogram.png" width="200">
-  <figcaption>Fig.1 - Histogram.</figcaption>
-  </figure>
-  </div>
-  <div class="" style="display: inline-block">
-  <figure>
-  <img src="data/HW2-Gaussian.png" width="200">
-  <figcaption>Fig.2 - Gaussian.</figcaption>
-  </figure>
-  </div>
-<div>
-<div id="banner">
-  <div class="" style="display: inline-block">
-  <figure>
-  <img src="data/HW3,4-Bayesian.bmp" width="200">
-  <figcaption>Fig.3 - Bayesian.</figcaption>
-  </figure>
-  </div>
+{}{img_left}{data/signet.png}{}{200px}{}
+== Semantic Aided Geometry Perception
+*"SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception"* by Y. Meng, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia.  \[[https://arxiv.org/abs/1812.05642 pdf]\]
 
-  <div class="" style="display: inline-block">
-  <figure>
-  <img src="data/HW5-EMmethod.bmp" width="200">
-  <figcaption>Fig.4 - EM method.</figcaption>
-  </figure>
-  </div>
-</div>
+/This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%/
 ~~~
 
-== CamOILi: Camera Inertial LiDAR Particle Filter SLAM
 
-If we have RGBD camera, IMU and LiDAR, how can our robot realize the world?
 
 ~~~
-{}{img_left}{data/276_rec3.png}{slam-1}{600px}{}
-Raw image, occupancy grid map and 2d reconstruction
+{}{img_left}{data/rss2018workshop.png}{rss2018w}{200px}{}
+
+== Dense Spatial Segmentation
+*"Dense Spatial Segmentation from Sparse Semantic Information"* by Q. Feng, Y. Meng, and N. Atanasov. Presented in RSS2018 workshop: Learning and Inference in Robotics(LAIR) \[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]
+
+/This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation./
 ~~~
 
+
+
+~~~
+{}{img_left}{data/tum-desk-rec.png}{yolokey-1}{200px}{}
+== Yolokey: Object detection and keypoint detection
+An tensorflow implementation of [https://github.com/geopavlakos/object3d stacked hourglass network] to detect category-specific keypoint and thanks to the [https://github.com/leggedrobotics/darknet_ros yolo-ros package].
+~~~
+
+
+
+~~~
+{}{img_left}{data/mario-demo.png}{rl-1}{200px}{}
 == Mario RL: Playing Super Mario in policy gradient method
 
-~~~
-{}{img_left}{data/mario-demo.png}{rl-1}{400px}{}
-Screenshot of live game
+The project is for [http://cseweb.ucsd.edu/~gary/253-w17/CSE-253-project-guidelines-2017 CSE253 Neural Networks for Pattern Recognition]
+
+Screenshot of the live game
 ~~~
 
-~~~
-{}{img_left}{data/epi.png}{rl-2}{400px}{}
-Reward received among episodes of games
-~~~
 
-== Yolokey: Object detection and keypoint detection in ROS
-
-An tensorflow implementation of [https://github.com/geopavlakos/object3d stacked hourglass network] to detect category-specific keypoint and thanks to the [https://github.com/leggedrobotics/darknet_ros yolo-ros package].
 
 ~~~
-{}{img_left}{data/tum-desk.png}{yolokey-1}{400px}{}
+{}{img_left}{data/276_rec3_rec.png}{slam-1}{200px}{}
+== CamOILi: Camera Inertial LiDAR Particle Filter SLAM
+
+/If we have RGB camera, IMU and 2D-LiDAR, can our robot perceive the world?/
+
+The project is for [https://natanaso.github.io/ece276a/ ECE276A Sensing & Estimation in Robotics]
+
+Raw image, log-odds occupancy grid map and 2D-reconstruction
 ~~~
 
-== RSS2018 workshop spotlight
-*Qiaojun Feng, Yue Meng, Nikolay Atanasov, Dense Spatial Segmentation from Sparse Semantic Information \[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]*
 
-/Abstract---This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation./
 
 ~~~
-{}{img_left}{data/rss2018-1.png}{rss-1}{400px}{}
-Semantic perception in front end
+{}{img_left}{data/cheetah_slow.gif}{cheetah}{200px}{}
+== Cheetah: Foreground Segmentation
+
+Given training set of foreground/background, how to locate the cheetah in pixel-level?
+
+The project is for [http://www.svcl.ucsd.edu/courses/ece271A/ece271A.htm ECE271A Statistical Learning I]
 ~~~
 
-~~~
-{}{img_left}{data/rss2018-2.png}{rss-2}{400px}{}
-Reconstruction
-~~~
