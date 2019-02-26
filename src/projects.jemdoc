@@ -5,9 +5,11 @@
 ~~~
 {}{img_left}{data/signet.png}{}{200px}{}
 == Semantic Aided Geometry Perception
-*"SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception"* by Y. Meng, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia.  \[[https://arxiv.org/abs/1812.05642 pdf]\]
+*SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception* by Y. Meng, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia. /in IEEE Conference on Computer Vision and Pattern Recognition(CVPR), 2019/  \[[https://arxiv.org/abs/1812.05642 pdf]\]
 
-/This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%/
+
+
+This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%
 ~~~
 
 
@@ -16,9 +18,9 @@
 {}{img_left}{data/rss2018workshop.png}{rss2018w}{200px}{}
 
 == Dense Spatial Segmentation
-*"Dense Spatial Segmentation from Sparse Semantic Information"* by Q. Feng, Y. Meng, and N. Atanasov. Presented in RSS2018 workshop: Learning and Inference in Robotics(LAIR) \[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]
+*Dense Spatial Segmentation from Sparse Semantic Information* by Q. Feng, Y. Meng, and N. Atanasov. / in RSS2018 workshop: Learning and Inference in Robotics(LAIR)/ \[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]
 
-/This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation./
+This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation.
 ~~~
 
 
@@ -46,7 +48,7 @@ Screenshot of the live game
 {}{img_left}{data/276_rec3_rec.png}{slam-1}{200px}{}
 == CamOILi: Camera Inertial LiDAR Particle Filter SLAM
 
-/If we have RGB camera, IMU and 2D-LiDAR, can our robot perceive the world?/
+If we have RGB camera, IMU and 2D-LiDAR, can our robot perceive the world?
 
 The project is for [https://natanaso.github.io/ece276a/ ECE276A Sensing & Estimation in Robotics]
 
