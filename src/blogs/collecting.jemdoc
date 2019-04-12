@@ -3,12 +3,12 @@
 # jemdoc: addpackage{amsmath}
 = Collecting
 
-== Daily
+== Routine
 - [https://arxiv.org/list/cs.CV/recent arXiv: Computer Vision and Pattern Recognition]
 - [http://www.arxiv-sanity.com/ arXiv Sanity]
 - [https://assert.pub/ Top 10 arXiv papers Today]
 
-== If procastinating
+== Procastination
 - [https://www.bilibili.com/video/av3584431/ 央视纪录片《高考》]
 - [https://aideadlin.es/?sub=RO,CV,ML AI Conference Deadlines]
 - [https://www.cmu.edu/randyslecture Randy Pausch's Last Lecture]
@@ -16,27 +16,24 @@
 == Ph.D.
 - [https://zhuanlan.zhihu.com/p/29636455 北美博士必读清单]
 - [https://www.zhihu.com/question/28920341 大牛写的非技术类作品]
-- [http://www.nextscientist.com/ Next Scientist]
 - [http://faculty.neu.edu.cn/cc/zhangyf/papers/CraftingFuture.pdf Crafting Your Research Future]
 - [https://www.cs.unc.edu/~azuma/hitch4.html CS Graduate Survival Guide]
+- [http://3dvision.princeton.edu/courses/COS598/2014sp/slides/lecture21_how2research.pdf Doing research in Computer Vision]
 
 == Robotics
-- [http://paopaorobot.org/ 泡泡机器人]
 - [https://github.com/kanster/awesome-slam Awesome SLAM]
 - [https://arxiv.org/pdf/1606.05830.pdf Past, Present and Future of SLAM]
-- [https://people.eecs.berkeley.edu/~chaene/cvpr17tut/SLAM.pdf Visual SLAM and VO]
 - [http://ais.informatik.uni-freiburg.de/teaching/ws11/robotics2/pdfs/rob2-13-frontends.pdf SLAM Front-Ends]
 - [http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Triggs00.pdf Bundle Adjustment: A Modern Synthesis]
 - [http://cs.brown.edu/research/ai/pomdp/tutorial/ POMDP]
 
-== $\text{\LaTeX}$
+== Technician
 - [http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf LaTeX for Beginners]
-
-== CMake
 - [https://github.com/onqtam/awesome-cmake Awesome CMake]
 - [https://cgold.readthedocs.io/en/latest/ CGold: The Hitchhiker's Guide to the CMake]
 
 == Blogs
+- [http://www.computervisionblog.com/ Tombone's Computer Vision Blog]
 - [http://www.pgbovine.net/writings.htm Philip Guo]
 - [https://www.kennethreitz.org/ Kenneth Reitz]
 
