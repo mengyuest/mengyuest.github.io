@@ -1,6 +1,6 @@
 static_files=()
 jem_files=(
-"index" "projects" 
+"index" "publications"
 "blogs/collecting" "blogs/hungarian"
 "misc/soccer" "misc/running"
 )
@@ -13,7 +13,7 @@ do
 done
 
 for i in "${static_files[@]}"
-do 
+do
    :
    cp src/static/$i .
 done

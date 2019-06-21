@@ -1,0 +1,39 @@
+# jemdoc: menu{MENU}{publications.html}
+# jemdoc: analytics{UA-124162585-1}
+= Publications
+
+~~~
+{}{img_left}{data/iros2019.gif}{}{250px}{}
+== Mesh Reprensentation for Localization and Mapping
+*Localization and Mapping using Instance-specific Mesh Models* by Q. Feng, Y. Meng, M. Shan and N.Atanasov. /in IEEE\/RSJ International Conference on
+Intelligent Robots and Systems(IROS), 2019/
+
+This paper focuses on building semantic maps, containing object poses and shapes, using a monocular camera. Our
+contribution is an instance-specific mesh model of object shape
+that can be optimized online based on semantic information extracted from camera images.
+~~~
+
+
+~~~
+{}{img_left}{data/signet.gif}{}{250px}{}
+== Semantic Aided Geometry Perception
+*SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception* by Y. Meng, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia. /in IEEE Conference on Computer Vision and Pattern Recognition(CVPR), 2019/ \[[https://arxiv.org/abs/1812.05642 arXiv]\]\[[https://mengyuest.github.io/SIGNet/ page]\] \[[https://github.com/mengyuest/SIGNet code]\]
+
+
+
+This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%
+~~~
+
+
+
+~~~
+{}{img_left}{data/rss2018workshop.png}{rss2018w}{250px}{}
+
+== Dense Spatial Segmentation
+*Dense Spatial Segmentation from Sparse Semantic Information* by Q. Feng, Y. Meng, and N. Atanasov. / in RSS2018 workshop: Learning and Inference in Robotics(LAIR)/ \[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]
+
+This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation.
+~~~
+
+
+
