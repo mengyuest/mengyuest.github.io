@@ -6,24 +6,50 @@
 #{}{img_left}{data/2.jpg}{Harbin}{160}{160}
 #~~~
 
-I am currently doing a research internship at [https://usa.honda-ri.com/ Honda Research Institute], California.
-
-Before that, I received an M.S. degree in [http://www.ece.ucsd.edu/ Electrical Computer Engineering] at [https://ucsd.edu/ University of California, San Diego] and worked in [https://existentialrobotics.org/ Existential Robotics Laboratory] and [https://wcsng.ucsd.edu Wireless Communication Systems and Networking Group]. I obtained my B.S. degree in the [https://www.tsinghua.edu.cn/publish/au/index.html Department of Automation] from [http://www.tsinghua.edu.cn/publish/thu2018en/index.html Tsinghua University].
-
-
-I love math and keen on robotics. I enjoy [https://mengyuest.github.io/soccer.html soccer] and [https://mengyuest.github.io/running.html running].
+I am currently doing an internship at Google.\n
+Before that, I received an M.S. degree in [http://www.ece.ucsd.edu/ ECE] at [https://ucsd.edu/ UC San Diego] and worked in [https://existentialrobotics.org/ ERL] and [https://wcsng.ucsd.edu WCSNG].\n
+I obtained my B.S. degree in the [https://www.tsinghua.edu.cn/publish/au/index.html Department of Automation] from [http://www.tsinghua.edu.cn/publish/thu2018en/index.html Tsinghua University].
 
 ~~~
 {}{img_left}{data/logos1.png}{}{400}{}
 ~~~
 
-
-== Reseach
-- Computer Vision
-- Robotics
-
 == Contact
 - Email: mengyuethu@gmail.com
+
+== Publications
+
+~~~
+{}{img_left}{data/iros2019.gif}{}{250px}{}
+=== Localization and Mapping using Instance-specific Mesh Models
+Q. Feng, *Y. Meng*, M. Shan and N. Atanasov\n
+/IEEE\/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), 2019./ \n
+
+This paper focuses on building semantic maps, containing object poses and shapes, using a monocular camera. Our
+contribution is an instance-specific mesh model of object shape
+that can be optimized online based on semantic information extracted from camera images.
+~~~
+
+~~~
+{}{img_left}{data/signet.gif}{}{250px}{}
+=== SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception
+*Y. Meng*, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia\n
+/IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2019./ \n
+\[[https://arxiv.org/abs/1812.05642 arXiv]\]\[[https://mengyuest.github.io/SIGNet/ page]\] \[[https://github.com/mengyuest/SIGNet code]\]
+
+This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%
+~~~
+
+~~~
+{}{img_left}{data/rss2018workshop-1.png}{rss2018w}{250px}{}
+
+=== Dense Spatial Segmentation from Sparse Semantic Information
+Q. Feng, *Y. Meng* and N. Atanasov\n
+/Workshop at Robotics: Science and Systems (RSS), 2018./ \n
+\[[https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view pdf]\]
+
+This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation.
+~~~
 
 
 

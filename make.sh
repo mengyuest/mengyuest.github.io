@@ -1,6 +1,6 @@
 static_files=()
 jem_files=(
-"index" "publications"
+"index"
 "blogs/collecting" "blogs/hungarian"
 "misc/soccer" "misc/running"
 )
