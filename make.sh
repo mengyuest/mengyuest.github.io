@@ -1,14 +1,12 @@
 static_files=()
 jem_files=(
 "index"
-"blogs/collecting" "blogs/hungarian"
-"misc/soccer" "misc/running"
 )
 
 for i in "${jem_files[@]}"
 do
    :
-   jemdoc -c config/my.conf src/$i
+   python2 mod_jemdoc.py -c config/my.conf src/$i
    mv src/${i}.html .
 done
 

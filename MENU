@@ -1,13 +1,12 @@
 INTRO
-    Home                [index.html]
+    Home                [#home_anchor]
     Resume              [data/cv.pdf]
 
 BLOGS
-    Collecting          [collecting.html]
-    Hungarian method    [hungarian.html]
-    IROS2018-SLAM       [iros2018-slam-papers]
+    Collecting          [#collecting_anchor]
+    IROS2018SLAM       [iros2018-slam-papers]
     
 MISC
     我们自35班          [https://www.bilibili.com/video/av35787189]
-    Soccer              [soccer.html]
-    Running             [running.html]
+    Soccer              [#soccer_anchor]
+    Running             [#running_anchor]
