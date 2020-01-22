@@ -34,6 +34,16 @@ I obtained my B.S. degree in the [https://www.tsinghua.edu.cn/publish/au/index.h
 == Publications
 
 ~~~
+{}{img_left}{data/icra2020.png}{}{250px}{}
+=== Learning 3D-aware Egocentric Spatial-Temporal Interaction via Graph Convolutional Networks
+C. Li, *Y. Meng*, S. Chan and Y. Chen\n
+/IEEE Int. Conf. on Robotics and Automation (ICRA), 2020./\n
+\[[https://arxiv.org/pdf/1909.09272.pdf arXiv]\]
+
+This paper proposes a 3D-aware egocentric spatial-temporalinteraction framework for automated   driving applications. Graph convolution networks (GCN)  is  devised  for  interaction modeling. Extensive   experiments   are   conducted using  Honda  Research  Institute  Driving  Dataset.
+~~~
+
+~~~
 {}{img_left}{data/iros2019.gif}{}{250px}{}
 === Localization and Mapping using Instance-specific Mesh Models
 Q. Feng, *Y. Meng*, M. Shan and N. Atanasov\n
@@ -49,7 +59,7 @@ that can be optimized online based on semantic information extracted from camera
 === SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception
 *Y. Meng*, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia\n
 /IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2019./ \n
-\[[https://arxiv.org/abs/1812.05642 arXiv]\]\[[https://mengyuest.github.io/SIGNet/ page]\] \[[https://github.com/mengyuest/SIGNet code]\]
+\[[http://openaccess.thecvf.com/content_CVPR_2019/papers/Meng_SIGNet_Semantic_Instance_Aided_Unsupervised_3D_Geometry_Perception_CVPR_2019_paper.pdf paper]\]\[[https://mengyuest.github.io/SIGNet/ page]\] \[[https://github.com/mengyuest/SIGNet code]\]
 
 This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%
 ~~~
