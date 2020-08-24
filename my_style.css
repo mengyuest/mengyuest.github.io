@@ -47,6 +47,32 @@
     width: 300px;
 }
 
+.logo-figure {
+    /*display: inline-block;*/
+    width: 100px;
+}
+
+.logo-figure1 {
+    /*display: inline-block;*/
+    width: 200px;
+}
+
+.logo-col {
+    text-align: center;
+    width: 15%;
+}
+.logo-col:hover {
+    border:2px solid #b217b4;
+}
+
+.logo-col1 {
+    text-align: center;
+    width: 29%;
+}
+.logo-col1:hover {
+    border:2px solid #b217b4;
+}
+
 .pub-text{
     padding: 10px;
     width: 55%;
