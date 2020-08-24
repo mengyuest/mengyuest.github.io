@@ -61,17 +61,17 @@
     text-align: center;
     width: 15%;
 }
-.logo-col:hover {
+/* .logo-col:hover {
     border:2px solid #b217b4;
-}
+} */
 
 .logo-col1 {
     text-align: center;
     width: 29%;
 }
-.logo-col1:hover {
+/* .logo-col1:hover {
     border:2px solid #b217b4;
-}
+} */
 
 .pub-text{
     padding: 10px;
