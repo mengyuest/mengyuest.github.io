@@ -20,6 +20,7 @@ try {
     pageTracker._trackPageview();
 } catch(err) {}</script>
 
+
 <!--TODO THIS IS MY SCRIPT -->
 <script>
 function FadeIn(q) {
@@ -40,6 +41,8 @@ function FadeInLoop(q){
 
 
 
+
+
 <div class="sidenav">
   <div>
     <img class="clip-svg" src="data/avatar-8.jpg" width="180">
@@ -50,14 +53,14 @@ function FadeInLoop(q){
   <div class="menu-item"><a href="data/cv.pdf" target="_blank">Resume <span class='fas fa-external-link-alt fa-1x'></span> </a></div>
   <div class="menu-item"><a href="#publications_anchor">Publications</a></div>
 
-  <div class="menu-title">BLOGS</div>
-  <div class="menu-item"><a href="#collecting_anchor">Collecting</a></div>
+  <div class="menu-title">TECH</div>
+  <div class="menu-item"><a href="#collecting_anchor" onclick="collapseFunction('collecting_anchor');">Collecting</a></div>
   <div class="menu-item"><a href="iros2018-slam-papers" target="_blank">IROS2018SLAM <span class='fas fa-external-link-alt fa-1x'></span> </a></div>
 
   <div class="menu-title">MISC</div>
   <div class="menu-item"><a href="https://www.bilibili.com/video/av35787189" target="_blank">我们自35班 <span class='fas fa-external-link-alt fa-1x'></span> </a></div>
-  <div class="menu-item"><a href="#soccer_anchor">Soccer</a></div>
-  <div class="menu-item"><a href="#running_anchor">Running</a></div>
+  <div class="menu-item"><a href="#soccer_anchor" onclick="collapseFunction('soccer_anchor');">Soccer</a></div>
+  <div class="menu-item"><a href="#running_anchor" onclick="collapseFunction('running_anchor');">Running</a></div>
 
   <div class="bottom-logos">
     <p></p>
@@ -295,7 +298,8 @@ function FadeInLoop(q){
   </li>
   </ul>
 
-<h2 id="collecting_anchor">Collecting</h2>
+<h2 id="collecting_anchor" class="collapsible">Collecting (click to see more)</h2>
+<div class="content">
   <h3>Routine</h3>
   <ul>
   <li><p><a href="https://arxiv.org/list/cs.CV/recent">arXiv: Computer Vision and Pattern Recognition</a></p>
@@ -360,9 +364,10 @@ function FadeInLoop(q){
   <li><p><a href="https://www.kennethreitz.org/">Kenneth Reitz</a></p>
   </li>
   </ul>
+</div>
 
-
-  <h2 id="soccer_anchor">Soccer</h2>
+  <h2 id="soccer_anchor" class="collapsible">Soccer (click to see more)</h2>
+  <div class="content">
   <!-- <table class="imgtable"><tr><td>
   <img class="misc-img" src="data/soccer-000.jpg" alt="soccer-000" width="500px" />&nbsp;</td>
   <td><p>Champion of Haidian District Soccer League, 2011</p></td></tr>
@@ -438,7 +443,10 @@ function FadeInLoop(q){
   <img class="misc-img" src="data/soccer-11.jpg" alt="soccer-11" width="500px" />&nbsp;</td>
   <td><p>Calblue Soccer Team, 2019</p>
   </td></tr></table> -->
-  <h2 id="running_anchor">Running</h2>
+  </div>
+
+  <h2 class="collapsible" id="running_anchor">Running (click to see more)</h2>
+  <div class="content">
   <table class="imgtable"><tr><td>
   <img class="misc-img" src="data/run-3.jpg" alt="running-4" width="500px" />&nbsp;</td>
   <td><p>High school record, 2012 (3000m race)</p>
@@ -471,6 +479,7 @@ function FadeInLoop(q){
   <img class="misc-img" src="data/run-5.jpg" alt="running-5" width="500px" />&nbsp;</td>
   <td><p>4*400m race champion, Tsinghua Sports Meeting, 2016</p>
   </td></tr></table>
+</div>
   <!-- <table class="imgtable"><tr><td>
     <img class="misc-img" src="data/run-11.jpg" alt="running-10" width="500px" />&nbsp;</td>
     <td><p>5000m 2nd place, 17th Northern California Chinese Culture Federation Sports Meeting, 2019</p>
@@ -505,5 +514,46 @@ function FadeInLoop(q){
   alt="hit counter"></a></div></noscript>
   <!-- End of Statcounter Code -->
   </footer>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    console.log(coll.length);
+    var i;
+  
+    for (i = 0; i < coll.length; i++) {
+      // coll[i].addEventListener("click", function() {
+      //   this.classList.toggle("active");
+      //   var content = this.nextElementSibling;
+      //   if (content.style.display === "block") {
+      //     content.style.display = "none";
+      //   } else {
+      //     content.style.display = "block";
+      //   }
+      // });
+
+      coll[i].onclick = function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          this.textContent = this.textContent.split(" ")[0] + " (click to see more)";
+        } else {
+          content.style.display = "block";
+          this.textContent = this.textContent.split(" ")[0] + " (click to collapse)";
+        }
+      };
+    }
+  </script>
+
+  <script>
+    function collapseFunction(id) {
+      var coll = document.getElementById(id);
+      coll.classList.toggle("active");
+      var content = coll.nextElementSibling;
+      content.style.display = "block";
+      coll.textContent = coll.textContent.split(" ")[0] + " (click to collapse)";
+    }
+  </script>
+
 </body>
 </html>
