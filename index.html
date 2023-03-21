@@ -162,13 +162,24 @@ function FadeInLoop(q){
 <h2 id="publications_anchor">Publications</h2>
 <table>
   <tr>
+    <td class="pub-figure"> <img class="pub-img" src="data/l4dc2023.gif"/> </td>
+    <td class="pub-text">
+    <h3>Hybrid Systems Neural Control with Region-of-Attraction Planner</h3>
+    <p><b>Yue Meng</b>, Chuchu Fan<br />
+    <i>5th Annual Learning for Dynamics & Control Conference (L4DC), 2023</i><br />
+    [<a href="https://arxiv.org/pdf/2303.10327.pdf">arXiv</a>] [<a href="https://mit-realm.github.io/hybrid-clf">page</a>]
+    <p>In this work, we propose a neural network (NN)-based method to control hybrid systems. Upon mode switching, we propose a differentiable planner to ensure the states after switching can land in next mode's RoA, hence stabilizing the hybrid system. With low running time, our controller achieves a higher stability/success rate over MPC, RL, common Lyapunov methods (CLF), linear quadratic regulator (LQR), quadratic programming (QP) and Hamilton-Jacobian-based methods (HJB).
+    </p>
+    </td>
+  </tr>
+  <tr>
     <td class="pub-figure"> <img class="pub-img" src="data/icra2023.gif"/> </td>
     <td class="pub-text">
     <h3>Density Planner: Minimizing Collision Risk in Motion Planning with Dynamic Obstacles using Density-based Reachability</h3>
-    <p>L. Lützow, <b>Y. Meng</b>, A. C. Armijos, C. Fan<br />
+    <p>Laura Lützow, <b>Yue Meng</b>, Andres Chavez Armijos, Chuchu Fan<br />
     <i>IEEE Int. Conf. on Robotics and Automation (ICRA), 2023</i><br />
     [<a href="https://arxiv.org/pdf/2210.02131.pdf">arXiv</a>] [<a href="https://youtu.be/jdwnddtrBnI">video</a>] [<a href="https://github.com/MIT-REALM/density_planner">code</a>]
-    <p>We propose a density-based method which uses a neural network and the Liouville equation to learn the density evolution for a system with an uncertain initial state. We conduct motion planning experiments on simulated environments and environments generated from real-world data and outperform baseline methods such as model predictive control and nonlinear programming. While our method requires offline planning, the online run speed is 100times faster compared to model predictive control.
+    <p>We propose a density-based method which uses a neural network and the Liouville equation to learn the density evolution for a system with an uncertain initial state. We conduct motion planning experiments on simulated environments and environments generated from real-world data and outperform baseline methods such as model predictive control and nonlinear programming. While our method requires offline planning, the online run speed is 100times faster compared to model predictive control. 
     </p>
     </td>
   </tr>
@@ -177,7 +188,7 @@ function FadeInLoop(q){
     <td class="pub-figure"> <img class="pub-img" src="data/nfm2022.png"/> </td>
     <td class="pub-text">
     <h3>Density of Reachable States and How to Use it for Safe Autonomous Motion Planning</h3>
-    <p><b>Y. Meng</b>, Z. Qiu, M. T. B. Waez, C. Fan<br />
+    <p><b>Yue Meng</b>, Zeng Qiu, Md Tawhid Bin Waez, Chuchu Fan<br />
     <i>NASA Formal Methods Symposium (NFM), 2022</i><br />
     [<a href="https://drive.google.com/file/d/1Q-cU3MRY-nd2wydaSzwJ76cMy9DVIjQa/view?usp=sharing">pdf</a>]
     <p>
@@ -189,7 +200,7 @@ function FadeInLoop(q){
     <td class="pub-figure"> <img class="pub-img" src="data/corl2021.png"/> </td>
     <td class="pub-text">
     <h3>Learning Density Distribution of Reachable States for Autonomous Systems</h3>
-    <p><b>Y. Meng</b>, D. Sun, Z. Qiu, M. T. B. Waez, C. Fan<br />
+    <p><b>Yue Meng</b>, Dawei Sun, Zeng Qiu, Md Tawhid Bin Waez, Chuchu Fan<br />
     <i>Conference of Robotics and Learning (CoRL), 2021</i><br />
     [<a href="https://arxiv.org/pdf/2109.06728.pdf">arXiv</a>][<a href="https://github.com/mengyuest/nn_reachable_density/">code</a>][<a href="https://youtu.be/GiL7pRFgr0s">seminar</a>]
     <p>In this work, we propose a data-driven method to compute the density distribution of reachable states for nonlinear systems. Our approach learns system dynamics and the state density jointly from trajectory data, guided by the fact that the state density evolution follows the Liouville partial differential equation. We show that our learned solution can produce a much more accurate estimate on density distribution, and can quantify risks less conservatively and flexibly compared with worst-case analysis.</p>
@@ -201,7 +212,7 @@ function FadeInLoop(q){
     <td class="pub-figure"> <img class="pub-img" src="data/iros2021.gif"/> </td>
     <td class="pub-text">
       <h3>Reactive and Safe Road User Simulations using Neural Barrier Certificates</h3>
-      <p><b>Y. Meng</b>, Z. Qin, C. Fan<br />
+      <p><b>Yue Meng</b>, Zengyi Qin, Chuchu Fan<br />
       <i>IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), 2021.</i> <br />
       [<a href="https://arxiv.org/pdf/2109.06689.pdf">arXiv</a>][<a href="http://realm.mit.edu/reactive-agent-models/">page</a>][<a href="https://github.com/mengyuest/reactive_cbf/">code</a>][<a href="https://youtu.be/GiL7pRFgr0s">seminar</a>]
       <p>We proposed a reactive agent model which can ensure safety by learning high-level decisions from expert data and a low level decentralized controller guided by the jointly learned decentralized barrier certificates. Empirical results show that our approach can achieve a significant improvement in safety while being similar to human behaviors.</p>
@@ -212,7 +223,7 @@ function FadeInLoop(q){
     <td class="pub-figure"> <img class="pub-img" src="data/iclr2021.gif"/> </td>
     <td class="pub-text">
       <h3>AdaFuse: Adaptive Temporal Fusion Network for Efficient Action Recognition</h3>
-      <p><b>Y. Meng</b>, R. Panda, C. Lin, P. Sattigeri, L. Karlinsky, K. Saenko, A. Oliva and R. Feris<br />
+      <p><b>Yue Meng</b>, Rameswar Panda, Chung-Ching Lin, Prasanna Sattigeri, Leonid Karlinsky, Kate Saenko, Aude Oliva, Rogerio Feris<br />
       <i>Int. Conf. on Learning Representations (ICLR), 2021.</i><br />
     [<a href="https://arxiv.org/pdf/2102.05775.pdf">arXiv</a>][<a href="https://mengyuest.github.io/AdaFuse/">page</a>][<a href="https://github.com/mengyuest/AdaFuse">code</a>]</p> 
       <p>This paper introduces an adaptive temporal fusion, AdaFuse, that dynamically fuses channels for strong temporal modelling. Extensive experiments on SomethingV1\&V2, Jester and Mini-Kinetics show AdaFuse achieves 40\% computation savings with comparable accuracy to state-of-the-art methods</p>
@@ -223,7 +234,7 @@ function FadeInLoop(q){
     <td class="pub-figure"> <img class="pub-img" src="data/eccv2020.gif"/> </td>
     <td class="pub-text">
       <h3>AR-Net: Adaptive Frame Resolution for Efficient Action Recognition</h3>
-      <p><b>Y. Meng</b>, C. Lin, R. Panda, P. Sattigeri, L. Karlinsky, K. Saenko, A. Oliva and R. Feris<br />
+      <p><b>Yue Meng</b>, Chung-Ching Lin, Rameswar Panda, Prasanna Sattigeri, Leonid Karlinsky, Aude Oliva, Kate Saenko, Rogerio Feris<br />
       <i>European Conf. on Computer Vision (ECCV), 2020.</i><br />
     [<a href="https://arxiv.org/pdf/2007.15796.pdf">arXiv</a>][<a href="https://mengyuest.github.io/AR-Net">page</a>][<a href="https://github.com/mengyuest/AR-Net">code</a>]</p>  
     <p>This paper proposes a novel approach, AR-Net (Adaptive  Resolution  Network),  that  selects  on-the-fly the optimal resolution for each frame conditioned on the input for efficient action recognition in long untrimmed videos. Extensive experiments on several action recognition datasets well demonstrate the efficacy of our method over state-of-the-art.</p>
@@ -234,7 +245,7 @@ function FadeInLoop(q){
   <td class="pub-figure"> <img class="pub-img" src="data/icra2020_after.gif"/> </td>
   <td class="pub-text">
     <h3>Learning 3D-aware Egocentric Spatial-Temporal Interaction via Graph Convolutional Networks</h3>
-    <p>C. Li, <b>Y. Meng</b>, S. Chan and Y. Chen<br />
+    <p>Chengxi Li, <b>Yue Meng</b>, Stanley H. Chan and Yi-Ting Chen<br />
     <i>IEEE Int. Conf. on Robotics and Automation (ICRA), 2020.</i><br />
     [<a href="https://arxiv.org/pdf/1909.09272.pdf">arXiv</a>][<a href="https://sites.google.com/site/yitingchen0524/research/driver-centric-risk-assessment/">page</a>]</p>
     <p>This paper proposes a 3D-aware egocentric spatial-temporalinteraction framework for automated   driving applications. Graph convolution networks (GCN)  is  devised  for  interaction modeling. Extensive   experiments   are   conducted using  Honda  Research  Institute  Driving  Dataset.</p>
@@ -245,7 +256,7 @@ function FadeInLoop(q){
   <td class="pub-figure"> <img class="pub-img" src="data/iros2019.gif"/> </td>
   <td class="pub-text">
     <h3>Localization and Mapping using Instance-specific Mesh Models</h3>
-    <p>Q. Feng, <b>Y. Meng</b>, M. Shan and N. Atanasov<br />
+    <p>Qiaojun Feng, <b>Yue Meng</b>, Mo Shan and Nikolay Atanasov<br />
     <i>IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), 2019.</i> <br />
     [<a href=" https://natanaso.github.io/ref/Feng_DeformableMeshModel_IROS19.pdf">pdf</a>]</p>
     <p>This paper focuses on building semantic maps, containing object poses and shapes, using a monocular camera. Our
@@ -258,7 +269,7 @@ function FadeInLoop(q){
   <td class="pub-figure"> <img class="pub-img" src="data/signet.gif"/> </td>
   <td class="pub-text">
     <h3>SIGNet: Semantic Instance Aided Unsupervised 3D Geometry Perception</h3>
-    <p><b>Y. Meng</b>, Y. Lu, A. Raj, S. Sunarjo, R. Guo, T. Javidi, G. Bansal and D. Bharadia<br />
+    <p><b>Yue Meng</b>, Aman Raj, Samuel Sunarjo, Rui Guo, Tara Javidi, Gaurav Bansal, Dinesh Bharadia<br />
     <i>IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2019.</i> <br />
     [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Meng_SIGNet_Semantic_Instance_Aided_Unsupervised_3D_Geometry_Perception_CVPR_2019_paper.pdf">pdf</a>][<a href="https://mengyuest.github.io/SIGNet/">page</a>][<a href="https://github.com/mengyuest/SIGNet">code</a>]</p>
     <p>This paper introduces SIGNet, a novel framework that provides robust geometry perception without requiring geometrically informative labels. SIGNet is shown to improve upon the state of art unsupervised learning for geometry perception by 30%</p>
@@ -269,7 +280,7 @@ function FadeInLoop(q){
   <td class="pub-figure"> <img class="pub-img" src="data/rss2018workshop-1.png"/> </td>
   <td class="pub-text">
     <h3>Dense Spatial Segmentation from Sparse Semantic Information</h3>
-    <p>Q. Feng, <b>Y. Meng</b> and N. Atanasov<br />
+    <p>Qiaojun Feng, <b>Yue Meng</b> and Nikolay Atanasov<br />
     <i>Workshop at Robotics: Science and Systems (RSS), 2018.</i> <br />
     [<a href="https://drive.google.com/file/d/1b1C4SMfS0aPwHM7mT4TSl59rD6pnD6gY/view">pdf</a>]</p>
     <p>This paper develops an environment representation that affords reasoning about the occupancy of space, necessary for safe navigation, and about the identity of objects, necessary for complex task interpretation.</p>
