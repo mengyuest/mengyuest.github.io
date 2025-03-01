@@ -45,7 +45,7 @@ function FadeInLoop(q){
 
 <div class="sidenav">
   <div>
-    <img class="clip-svg" src="data/avatar.jpg" width="180">
+    <img class="clip-svg" src="data/avartar.jpg" width="180">
   </div>
 
   <div class="menu-title">INTRO</div>
@@ -83,14 +83,14 @@ function FadeInLoop(q){
 <div class="main" id="main_anchor">
   <h1>Meng, Yue (孟岳)</h1>
   <!-- <hr> </hr> -->
-
-  <p>I am a 5<sup>th</sup> year PhD student at <a href="https://www.mit.edu/">MIT</a> <a href="https://aeroastro.mit.edu">AeroAstro</a>, working in <a href="https://aeroastro.mit.edu/realm"><b>REALM lab</b></a>. <br />
-    My research topic is <i>using machine learning techniques for safe and robust robot control</i>. <br />
+  <p style="color:#A51C30; font-weight:bold;">Looking for Research Scientist positions in Robotics / GenAI / LLM (United States, Fall 2025) <a href="data/cv.pdf" target="_blank">[CV]</a></p>
+  <p>I am a 5<sup>th</sup> year PhD candidate at <a href="https://www.mit.edu/">MIT</a> <a href="https://aeroastro.mit.edu">AeroAstro</a>. I work in <a href="https://aeroastro.mit.edu/realm"><b>REALM lab</b></a>. <br />
+    My research topic is <i>using deep learning techniques for robot planning and control tasks</i>. <br />
     Before that, I was an AI Resident at <a href="https://mitibmwatsonailab.mit.edu/?lnk=research">IBM Thomas J. Waston Research Center</a>.<br />
     I received an M.S. degree in <a href="https://www.ece.ucsd.edu/">ECE</a> at <a href="https://ucsd.edu/">UC San Diego</a> and worked in <a href="https://existentialrobotics.org/">ERL</a> and <a href="https://wcsng.ucsd.edu">WCSNG</a>, <br />
     and a B.S. degree in the <a href="https://tsinghua.edu.kg/publish/au/index.html">Department of Automation</a> from <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>.</p>
 
-  <!-- <p style="color:#ff0000; font-weight:bold; font-style:italic;">Looking for Research Scientist Position in Robotics/Perception/ML (USA, 2025 Fall) <a href="data/cv.pdf" target="_blank">[CV]</a></p> -->
+
 
   <table >
   <tr class="row">
@@ -183,6 +183,17 @@ function FadeInLoop(q){
 <h2 id="publications_anchor">Publications</h2>
 <table>
   <tr>
+    <td class="pub-figure"> <img class="pub-img" src="data/icra2025_demo_v1.gif"/> </td>
+    <td class="pub-text">
+    <h3>Reliable and Efficient Multi-Agent Coordination via Graph Neural Network Variational Autoencoders</h3>
+    <p><b>Yue Meng<sup>1</sup></b>, Nathalie Majcherczyk<sup>2</sup>, Wenliang Liu<sup>2</sup>, Scott Kiesel<sup>2</sup>, Chuchu Fan<sup>1</sup>, Federico Pecora<sup>2</sup><br />
+    <sup>1</sup>MIT  &nbsp; &nbsp; <sup>2</sup>Amazon Robotics<br />
+    <i>IEEE Int. Conf. on Robotics and Automation (ICRA), 2025</i><br />
+    [<a href="data/gnn_vae_coord.pdf">PDF</a>] [<a href="https://github.com/mengyuest/gnn-vae-coord">page</a>]
+    <p> We design Graph Neural Network Variational Autoencoders (GNN-VAE) to generate global schedules that efficiently coordinate multi-robot movements. We collect ground truth schedules through a Mixed-Integer Linear Program (MILP) solver and train GNN to encode these solutions in a latent space. Solutions are then decoded following the dual-branch framework. By construction, our GNN-VAE returns solutions that always respect the constraints. Our approach trained on small-scale problems can achieve high-quality solutions even for large-scale problems with 250 robots, being much faster than other baselines. </p>
+    </td>
+  </tr>
+  <tr>
     <td class="pub-figure"> <img class="pub-img" src="data/ral2024.png"/> </td>
     <td class="pub-text">
     <h3>Diverse Controllable Diffusion Policy with Signal Temporal Logic</h3>
@@ -196,7 +207,8 @@ function FadeInLoop(q){
     <td class="pub-figure"> <img class="pub-img" src="data/icra2024_conbat.png"/> </td>
     <td class="pub-text">
     <h3>ConBaT: Control Barrier Transformer for Safe Policy Learning</h3>
-    <p><b>Yue Meng</b>, Sai Vemprala, Rogerio Bonatti, Chuchu Fan, Ashish Kapoor<br />
+    <p><b>Yue Meng<sup>1</sup></b>, Sai Vemprala<sup>2</sup>, Rogerio Bonatti<sup>3</sup>, Chuchu Fan<sup>1</sup>, Ashish Kapoor<sup>2</sup><br />
+    <sup>1</sup>MIT  &nbsp; &nbsp; <sup>2</sup>Scaled Foundations  &nbsp; &nbsp; <sup>3</sup>Microsoft Research  <br />
     <i>IEEE Int. Conf. on Robotics and Automation (ICRA), 2024</i><br />
     [<a href="https://arxiv.org/pdf/2303.04212.pdf">arXiv</a>] 
     <p> We propose Control Barrier Transformer (ConBaT), an approach to learn safe behaviors from demonstrations. ConBaT is inspired by control barrier functions and uses a causal transformer to predict safe actions with a critic that requires minimal labeling. During deployment, we employ a lightweight optimization to ensure future states lie within the learned safe set. We apply our approach to control tasks and show that ConBaT results in safer policies compared to classical and learning-based baselines such as imitation learning, reinforcement learning, and model predictive control.
