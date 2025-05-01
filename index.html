@@ -183,6 +183,29 @@ function FadeInLoop(q){
 <h2 id="publications_anchor">Publications</h2>
 <table>
   <tr>
+    <td class="pub-figure"> <img class="pub-img" src="data/audere_arch.png"/> </td>
+    <td class="pub-text">
+    <h3>AuDeRe: Automated Strategy Decision and Realization in Robot Planning and Control via LLMs</h3>
+    <p><b>Yue Meng<sup>*</sup></b>, Fei Chen<sup>*</sup>, Yongchao Chen, Chuchu Fan<br />
+    <i>Under review</i><br />
+    [<a href="https://arxiv.org/pdf/2504.03015">arXiv</a>] [<a href="https://github.com/mengyuest/llm-planning-control">Code</a>]
+    <p> We propose a framework that leverages LLMs to select appropriate planning and control strategies based on task descriptions, environmental constraints, and system dynamics. These strategies are then executed by calling the available comprehensive planning and control APIs. The results demonstrate that using LLMs to determine planning and control strategies from natural language descriptions significantly enhances robotic autonomy while reducing the need for extensive manual tuning and expert knowledge.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="pub-figure"> <img class="pub-img" src="data/telograf_arch.png"/> </td>
+    <td class="pub-text">
+    <h3>TeLoGraF: Temporal Logic Planning via Graph-encoded Flow Matching</h3>
+    <p><b>Yue Meng</b>, Chuchu Fan<br />
+    <i>Int. Conf. on Machine Learning (ICML), 2025</i><br />
+    [<a href="https://arxiv.org/pdf/2504.03015">PDF</a>]
+    <p> We design a learning-based framework that uses Graph Neural Networks (GNN) and flow matching to solve general Signal Temporal Logic (STL) tasks. We collect a large-scale dataset of 200K STL specifications paired with demonstrations and then train our model.
+      We conduct extensive experiments in five simulation environments ranging from simple dynamical models in the 2D space to high-dimensional 7DoF Franka Panda robot arm and Ant quadruped navigation. Results show that our method outperforms other baselines in the STL satisfaction rate. Compared to classical STL planning algorithms, our approach is 10-100X faster in inference and can work on any system dynamics. 
+      <!-- our method generalizes across diverse robotic environments and significantly outperforms classical STL planners in both speed and satisfaction rate. -->
+    </p>
+    </td>
+  </tr>
+  <tr>
     <td class="pub-figure"> <img class="pub-img" src="data/icra2025_demo_v1.gif"/> </td>
     <td class="pub-text">
     <h3>Reliable and Efficient Multi-Agent Coordination via Graph Neural Network Variational Autoencoders</h3>
